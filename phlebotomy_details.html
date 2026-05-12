@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HKILD 全方位真人抽血課程 | 8星期實戰培訓</title>
+<link rel="canonical" href="https://www.hkild.com/phlebotomy">
+<!-- Open Graph Tags for Social Sharing -->
+<meta property="og:title" content="HKILD 全方位真人抽血課程 | 8星期實戰培訓">
+<meta property="og:description" content="零基礎轉行醫護，8週掌握臨床級抽血技能。58小時真人實操，1500+畢業生成功入職醫院診所。立即報名，名額有限。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.hkild.com/phlebotomy">
+<meta property="og:image" content="https://static.wixstatic.com/media/2b1d5d_c68f7240357e4250b593374a0b5b0ee2~mv2.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HKILD 全方位真人抽血課程">
+<meta name="twitter:description" content="8週真人實操培訓，零基礎轉行醫護。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  /* =====================================================
+     HKILD BRAND COLOURS (matched from hkild.com)
+     Primary Blue  : #0088cb
+     Light Blue    : #a6d1ee
+     Red / CTA     : #ed1c24
+     Yellow Accent : #ffcb05
+     Dark Navy     : #0a1a2e
+  ===================================================== */
+  :root {
+    --ink:         #0a1a2e;
+    --paper:       #f5f7fa;
+    --blue:        #0088cb;
+    --blue-dark:   #0070a8;
+    --blue-light:  #a6d1ee;
+    --red:         #ed1c24;
+    --red-hover:   #cc1520;
+    --yellow:      #ffcb05;
+    --smoke:       #5a6a7a;
+    --line:        #d8e4ed;
+    --card:        #ffffff;
+    --hero-gradient: linear-gradient(165deg, #00213a 0%, #003d6b 45%, #004f88 100%);
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body {
+    font-family: 'Noto Sans TC', Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; width: 100%; }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    background: var(--hero-gradient);
+    padding: 64px 0 72px;   /* reduced – no sticky nav above */
+    overflow: hidden;
+    color: #fff;
+  }
+
+  /* ── IMAGE ZONE 1: Hero background photo ─────────────────────────
+     Upload a classroom / students practising photo.
+     Replace the src below with your Wix media URL after uploading.
+     Recommended size: 1400 × 700 px (landscape).
+  ─────────────────────────────────────────────────────────────────── */
+  .hero-bg-img {
+    position: absolute; inset: 0;
+    background-image: url('https://static.wixstatic.com/media/2b1d5d_064e2614edd64c55837b1f6b199efa61~mv2.jpeg');
+    background-size: cover; background-position: center;
+    opacity: 0.18;          /* subtle overlay – increase to show more */
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 100px;
+    background: linear-gradient(to top, var(--paper), transparent);
+    pointer-events: none;
+  }
+  .hero .container { position: relative; z-index: 2; }
+  .hero-grid {
+    display: grid; grid-template-columns: 1fr min(380px, 100%); gap: 56px; align-items: center;
+  }
+
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+    border-radius: 100px; padding: 6px 16px; font-size: .78rem; font-weight: 600;
+    color: var(--blue-light); margin-bottom: 20px;
+  }
+  .badge-dot {
+    width: 7px; height: 7px; border-radius: 50%; background: var(--red);
+    animation: pulse-dot 2s infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: .5; transform: scale(1.3); }
+  }
+
+  /* ===== TEXT BOX ANIMATIONS ===== */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.97) translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 900; line-height: 1.3; letter-spacing: -.03em;
+    margin-bottom: 18px;
+  }
+  .hero h1 em {
+    font-style: normal;
+    background: linear-gradient(135deg, var(--blue-light), #7cc8ef);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .hero-sub {
+    font-size: 1.05rem; line-height: 1.8; color: rgba(255,255,255,.75);
+    margin-bottom: 30px; max-width: 520px;
+  }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 32px; }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 16px 34px; border-radius: 8px; font-size: 1rem; font-weight: 700;
+    background: var(--red); color: #fff; text-decoration: none;
+    box-shadow: 0 4px 20px rgba(237,28,36,.35);
+    transition: all .25s;
+    animation: slideInScale 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  .btn-primary:nth-of-type(1) { animation-delay: 0.5s; }
+  .btn-primary:nth-of-type(2) { animation-delay: 0.6s; }
+  .btn-primary:hover { background: var(--red-hover); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(237,28,36,.45); }
+
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 16px 28px; border-radius: 8px; font-size: .95rem; font-weight: 600;
+    border: 1.5px solid rgba(255,255,255,.28); color: #fff; text-decoration: none;
+    transition: all .25s;
+    animation: slideInScale 0.6s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.65s;
+  }
+  .btn-secondary:hover { border-color: var(--blue-light); color: var(--blue-light); }
+
+  .hero-stats { display: flex; gap: 32px; }
+  .stat {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  .stat:nth-child(1) { animation-delay: 0.4s; }
+  .stat:nth-child(2) { animation-delay: 0.5s; }
+  .stat:nth-child(3) { animation-delay: 0.6s; }
+  .stat-num   { font-size: 1.5rem; font-weight: 900; color: var(--blue-light); }
+  .stat-label { font-size: .75rem; color: rgba(255,255,255,.5); margin-top: 2px; }
+
+  /* Price Card */
+  .price-card {
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 20px; padding: 36px 30px;
+    backdrop-filter: blur(20px);
+    animation: slideInScale 0.6s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+  }
+  .price-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,136,203,.15);
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .price-card-label { font-size: .8rem; color: var(--blue-light); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 12px; }
+  .price-row { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+  .price-original { font-size: 1.1rem; color: rgba(255,255,255,.4); text-decoration: line-through; }
+  .price-now { font-size: 2.6rem; font-weight: 900; color: #fff; letter-spacing: -.03em; }
+  .price-save {
+    display: inline-block; background: rgba(237,28,36,.2); color: #ff8080;
+    font-size: .78rem; font-weight: 700; padding: 3px 10px; border-radius: 6px; margin-bottom: 20px;
+  }
+  .price-features { list-style: none; margin-bottom: 24px; }
+  .price-features li {
+    padding: 8px 0; font-size: .88rem; color: rgba(255,255,255,.78);
+    display: flex; align-items: flex-start; gap: 10px;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+  }
+  .price-features li:last-child { border-bottom: none; }
+  .check-icon { color: var(--blue-light); flex-shrink: 0; margin-top: 2px; }
+  .price-card .btn-primary { width: 100%; justify-content: center; }
+  .price-card-note { text-align: center; font-size: .75rem; color: rgba(255,255,255,.4); margin-top: 12px; }
+
+  /* ===== SHARED SECTION STYLES ===== */
+  .section-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+    color: var(--blue); margin-bottom: 14px;
+  }
+  .section-tag::before { content: ''; display: block; width: 24px; height: 2px; background: var(--blue); border-radius: 2px; }
+  .section-heading {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 900; line-height: 1.35; letter-spacing: -.02em; margin-bottom: 16px;
+  }
+  .section-sub { font-size: 1rem; color: var(--smoke); max-width: 640px; margin-bottom: 48px; line-height: 1.8; }
+
+  /* ===== PROBLEM / AGITATE ===== */
+  .problem { padding: 72px 0 56px; }
+  .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .problem-card {
+    border-radius: 16px; padding: 36px 32px;
+    animation: slideInScale 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  .problem-card:nth-child(1) { animation-delay: 0.1s; }
+  .problem-card:nth-child(2) { animation-delay: 0.25s; }
+  .problem-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,136,203,.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .problem-card.bad  { background: #fff5f5; border: 1.5px solid #ffd0d0; }
+  .problem-card.good { background: #edf6ff; border: 1.5px solid #b8dcf5; }
+  .problem-icon  { font-size: 1.8rem; margin-bottom: 14px; }
+  .problem-card h3 { font-size: 1.15rem; font-weight: 800; margin-bottom: 10px; }
+  .problem-card.bad  h3 { color: #b71c1c; }
+  .problem-card.good h3 { color: #003d6b; }
+  .problem-card p { font-size: .92rem; color: var(--smoke); line-height: 1.75; }
+
+  /* ===== CLASSROOM PHOTO STRIP ===== */
+  /* ── IMAGE ZONE 2: Classroom / Students photo strip ──────────────
+     3 photos side by side showing your classroom, students practising.
+     Replace the src values below with your Wix media URLs.
+     Recommended size per photo: 400 × 280 px.
+  ─────────────────────────────────────────────────────────────────── */
+  .photo-strip {
+    padding: 0 0 64px;
+  }
+  .photo-strip-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; border-radius: 16px; overflow: hidden;
+  }
+  .photo-strip-grid img {
+    width: 100%; height: 220px; object-fit: cover; display: block;
+    transition: transform .35s;
+  }
+  .photo-strip-grid img:hover { transform: scale(1.03); }
+  .photo-placeholder {
+    width: 100%; height: 220px;
+    background: linear-gradient(135deg, #d0e9f7, #b8d9ee);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-size: .85rem; color: var(--blue-dark); font-weight: 600; gap: 8px;
+    border-radius: 12px;
+  }
+  .photo-placeholder span { font-size: 2rem; }
+
+  /* ===== FEATURES ===== */
+  .features { padding: 56px 0 72px; }
+  .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .feature-card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 32px 28px;
+    transition: transform .25s, box-shadow .25s;
+  }
+  .feature-card {
+    animation: slideInScale 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  .feature-card:nth-child(1) { animation-delay: 0.1s; }
+  .feature-card:nth-child(2) { animation-delay: 0.2s; }
+  .feature-card:nth-child(3) { animation-delay: 0.3s; }
+  .feature-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,136,203,.1); }
+  .feature-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 40px; height: 40px; border-radius: 10px;
+    background: var(--blue); color: #fff; font-size: .85rem; font-weight: 800;
+    margin-bottom: 16px;
+  }
+  .feature-card h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 8px; }
+  .feature-card p  { font-size: .88rem; color: var(--smoke); line-height: 1.75; }
+
+  /* ===== CURRICULUM (dark band) ===== */
+  .curriculum {
+    padding: 72px 0;
+    background: var(--ink);
+    color: #fff;
+    position: relative;
+  }
+  .curriculum::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(0,136,203,.15), transparent);
+    pointer-events: none;
+  }
+  .curriculum .container { position: relative; z-index: 1; }
+  .curriculum .section-tag { color: var(--blue-light); }
+  .curriculum .section-tag::before { background: var(--blue-light); }
+  .curriculum .section-heading { color: #fff; }
+  .curriculum .section-sub { color: rgba(255,255,255,.55); }
+  .curr-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px;
+  }
+  .curr-item {
+    background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.09);
+    border-radius: 12px; padding: 18px 20px;
+    font-size: .88rem; color: rgba(255,255,255,.82);
+    display: flex; align-items: flex-start; gap: 10px;
+    transition: background .2s;
+    animation: slideInScale 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  .curr-item:nth-child(1) { animation-delay: 0.1s; }
+  .curr-item:nth-child(2) { animation-delay: 0.2s; }
+  .curr-item:nth-child(3) { animation-delay: 0.3s; }
+  .curr-item:nth-child(4) { animation-delay: 0.4s; }
+  .curr-item:nth-child(5) { animation-delay: 0.5s; }
+  .curr-item:nth-child(6) { animation-delay: 0.6s; }
+  .curr-item:hover {
+    background: rgba(0,136,203,.2);
+    transform: translateY(-4px);
+    transition: transform .3s ease, background .3s ease;
+  }
+  .curr-item .check-icon { color: var(--blue-light); flex-shrink: 0; margin-top: 1px; }
+
+  /* ===== STANDARDS ===== */
+  .standards { padding: 72px 0; }
+  .standards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .standard-card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 32px 24px; text-align: center;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  .standard-card:nth-child(1) { animation-delay: 0.1s; }
+  .standard-card:nth-child(2) { animation-delay: 0.2s; }
+  .standard-card:nth-child(3) { animation-delay: 0.3s; }
+  .standard-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,136,203,.1);
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .standard-icon { font-size: 2.2rem; margin-bottom: 14px; }
+  .standard-card h3 { font-size: 1rem; font-weight: 800; margin-bottom: 8px; }
+  .standard-card p  { font-size: .85rem; color: var(--smoke); line-height: 1.7; }
+
+  /* ===== TESTIMONIAL ===== */
+  .testimonial {
+    padding: 72px 0;
+    background: linear-gradient(165deg, #002d52 0%, #00213a 100%);
+    color: #fff; position: relative; overflow: hidden;
+  }
+  .testimonial::before {
+    content: '"';
+    position: absolute; top: -40px; left: 3%;
+    font-size: 20rem; font-family: 'DM Serif Display', serif;
+    color: rgba(255,255,255,.03); pointer-events: none; line-height: 1;
+  }
+  .testimonial .container { position: relative; z-index: 1; }
+
+  /* ── IMAGE ZONE 3: Student / Instructor photo ────────────────────
+     Optional: a small circular headshot of the student (梁同學) or
+     Ray Sir the instructor. Replace src with your Wix media URL.
+     Recommended: 120 × 120 px, square (will be cropped to circle).
+  ─────────────────────────────────────────────────────────────────── */
+  .testi-content {
+    max-width: 700px; margin: 0 auto; text-align: center;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+  }
+  .testi-content:hover {
+    transform: translateY(-4px);
+    transition: transform .3s ease;
+  }
+  .testi-avatar {
+    width: 72px; height: 72px; border-radius: 50%;
+    object-fit: cover; border: 3px solid var(--blue-light);
+    margin: 0 auto 20px; display: block;
+  }
+  .testi-avatar-placeholder {
+    width: 72px; height: 72px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.8rem; margin: 0 auto 20px;
+    border: 3px solid var(--blue-light);
+  }
+  .testi-content blockquote {
+    font-size: 1.05rem; line-height: 1.95; color: rgba(255,255,255,.82);
+    font-style: italic; margin-bottom: 20px;
+  }
+  .testi-stars { color: var(--yellow); font-size: 1.1rem; margin-bottom: 12px; letter-spacing: 3px; }
+  .testi-author { font-weight: 700; color: var(--blue-light); font-size: .95rem; }
+  .testi-role   { font-size: .82rem; color: rgba(255,255,255,.45); margin-top: 4px; }
+
+  /* ===== SCHEDULE ===== */
+  .schedule { padding: 72px 0; }
+  .schedule-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .sched-card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 36px 30px; text-align: center;
+    transition: transform .25s, box-shadow .25s;
+    animation: slideInScale 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  .sched-card:nth-child(1) { animation-delay: 0.1s; }
+  .sched-card:nth-child(2) { animation-delay: 0.2s; }
+  .sched-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,136,203,.1);
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .sched-day {
+    display: inline-block; padding: 6px 18px; border-radius: 100px;
+    background: var(--blue); color: #fff; font-size: .8rem; font-weight: 700; margin-bottom: 16px;
+  }
+  .sched-card h3 { font-size: 1.3rem; font-weight: 900; margin-bottom: 6px; }
+  .sched-card p  { font-size: .9rem; color: var(--smoke); line-height: 1.7; }
+
+  /* ===== DETAILS ===== */
+  .details { padding: 56px 0 72px; }
+  .details-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .detail-item {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px 20px;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  .detail-item:nth-child(1) { animation-delay: 0.1s; }
+  .detail-item:nth-child(2) { animation-delay: 0.2s; }
+  .detail-item:nth-child(3) { animation-delay: 0.3s; }
+  .detail-item:nth-child(4) { animation-delay: 0.4s; }
+  .detail-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,136,203,.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .detail-label { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--blue); margin-bottom: 6px; }
+  .detail-value { font-size: .95rem; font-weight: 600; }
+
+  /* ===== FINAL CTA ===== */
+  .final-cta {
+    padding: 88px 0;
+    background: var(--ink); color: #fff;
+    text-align: center; position: relative; overflow: hidden;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,136,203,.18), transparent);
+    pointer-events: none;
+  }
+  .final-cta .container { position: relative; z-index: 1; }
+  .final-cta h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 900; line-height: 1.35; letter-spacing: -.02em; margin-bottom: 16px;
+  }
+  .final-cta p { font-size: 1rem; color: rgba(255,255,255,.6); margin-bottom: 36px; max-width: 500px; margin-left: auto; margin-right: auto; }
+  .final-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; }
+
+  /* ===== ANIMATIONS ===== */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .hero-grid         { grid-template-columns: 1fr; gap: 36px; }
+    .price-card        { max-width: 420px; }
+    .problem-grid      { grid-template-columns: 1fr; }
+    .features-grid     { grid-template-columns: 1fr; }
+    .standards-grid    { grid-template-columns: 1fr; }
+    .schedule-grid     { grid-template-columns: 1fr; }
+    .photo-strip-grid  { grid-template-columns: 1fr 1fr; }
+    .photo-strip-grid .photo-placeholder:last-child { display: none; }
+  }
+  @media (max-width: 600px) {
+    .hero              { padding: 48px 0 56px; }
+    .hero-stats        { gap: 20px; }
+    .photo-strip-grid  { grid-template-columns: 1fr; }
+  }
+
+  /* ===== CLASSROOM BANNER ===== */
+  .classroom-banner {
+    padding: 0; overflow: hidden; line-height: 0;
+    position: relative;
+  }
+  .classroom-banner img {
+    width: 100%; height: 420px; object-fit: cover; object-position: center bottom;
+    display: block;
+  }
+  .classroom-banner-caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(to top, rgba(0,21,42,.75), transparent);
+    padding: 24px 32px 20px;
+    color: #fff; font-size: .95rem; font-weight: 600;
+    letter-spacing: .02em;
+  }
+  .classroom-banner-caption span { color: var(--blue-light); }
+
+  /* ===== IV CIRCLE BREAK ===== */
+  .iv-break {
+    padding: 72px 0;
+    background: var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    gap: 56px; flex-wrap: wrap;
+  }
+  .iv-break img {
+    width: 380px; height: 380px; object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--blue);
+    box-shadow: 0 0 60px rgba(0,136,203,.3);
+    flex-shrink: 0;
+  }
+  .iv-break-text { max-width: 420px; color: #fff; }
+  .iv-break-text .section-tag { color: var(--blue-light); }
+  .iv-break-text .section-tag::before { background: var(--blue-light); }
+  .iv-break-text h2 {
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 900; line-height: 1.35; margin-bottom: 14px;
+  }
+  .iv-break-text p { font-size: .95rem; color: rgba(255,255,255,.65); line-height: 1.8; }
+
+  /* ===== GRADUATION SHOWCASE ===== */
+  .graduation {
+    padding: 72px 0;
+    background: linear-gradient(165deg, #edf6ff 0%, #f5f7fa 100%);
+  }
+  .graduation-inner {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+  }
+  .graduation-img {
+    border-radius: 20px; overflow: hidden;
+    box-shadow: 0 16px 60px rgba(0,136,203,.15);
+  }
+  .graduation-img img { width: 100%; display: block; }
+  .graduation-text .section-tag { color: var(--blue); }
+  .graduation-text h2 {
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 900; line-height: 1.35; margin-bottom: 16px;
+  }
+  .graduation-text p { font-size: .95rem; color: var(--smoke); line-height: 1.85; margin-bottom: 14px; }
+  .grad-highlight {
+    display: flex; align-items: center; gap: 12px;
+    background: #fff; border: 1px solid var(--line);
+    border-radius: 12px; padding: 14px 18px; margin-bottom: 10px;
+    font-size: .9rem; font-weight: 600;
+  }
+  .grad-highlight-icon { font-size: 1.4rem; flex-shrink: 0; }
+
+  /* ===== EQUIPMENT STRIP ===== */
+  .equipment-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    align-items: center; padding: 24px 0 8px;
+  }
+  .equipment-img { border-radius: 16px; overflow: hidden; }
+  .equipment-img img { width: 100%; display: block; border-radius: 16px; }
+  .equipment-text h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 10px; }
+  .equipment-text p  { font-size: .9rem; color: var(--smoke); line-height: 1.8; }
+
+  @media (max-width: 900px) {
+    .iv-break         { flex-direction: column; text-align: center; padding: 56px 24px; }
+    .iv-break img     { width: 280px; height: 280px; }
+    .graduation-inner { grid-template-columns: 1fr; }
+    .equipment-row    { grid-template-columns: 1fr; }
+    .classroom-banner img { height: 280px; }
+  }
+
+
+  /* ===== TESTIMONIAL SLIDER ===== */
+  .testi-slider-wrap {
+    position: relative; overflow: hidden;
+  }
+  .testi-track {
+    display: flex;
+    transition: transform .45s cubic-bezier(.4,0,.2,1);
+  }
+  .testi-slide {
+    min-width: 100%; padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .testi-slide blockquote {
+    font-size: 1.05rem; line-height: 1.95; color: rgba(255,255,255,.82);
+    font-style: italic; margin-bottom: 20px;
+  }
+  .testi-dots {
+    display: flex; justify-content: center; gap: 8px; margin-top: 28px;
+  }
+  .testi-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: rgba(255,255,255,.25); border: none; cursor: pointer;
+    transition: background .2s, transform .2s; padding: 0;
+  }
+  .testi-dot.active { background: var(--blue-light); transform: scale(1.3); }
+  .testi-arrows {
+    display: flex; justify-content: center; gap: 12px; margin-top: 20px;
+  }
+  .testi-arrow {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+    color: #fff; font-size: 1.1rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background .2s;
+  }
+  .testi-arrow:hover { background: rgba(0,136,203,.4); }
+  .testi-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(0,136,203,.2); border: 1px solid rgba(0,136,203,.4);
+    border-radius: 100px; padding: 4px 12px;
+    font-size: .75rem; font-weight: 700; color: var(--blue-light);
+    margin-bottom: 14px;
+  }
+
+
+  /* ===== INLINE CTA STRIPS ===== */
+  .inline-cta {
+    padding: 40px 24px;
+    text-align: center;
+    background: var(--paper);
+  }
+  .inline-cta.dark {
+    background: var(--ink);
+  }
+  .inline-cta p {
+    font-size: 1rem;
+    color: var(--smoke);
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: .01em;
+  }
+  .inline-cta.dark p { color: rgba(255,255,255,.65); }
+  .inline-cta strong {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .inline-cta.dark strong { color: #fff; }
+  .inline-cta .btn-row {
+    display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+  }
+
+
+  /* ===== SCHEDULE v2 — real timetable ===== */
+  .sched-card { border-radius: 16px; overflow: hidden; border: 1.5px solid var(--line); }
+  .sched-header {
+    background: var(--blue); color: #fff;
+    padding: 18px 22px 14px;
+  }
+  .sched-code { font-size: .75rem; font-weight: 700; letter-spacing: .1em; opacity: .75; margin-bottom: 4px; }
+  .sched-day  { font-size: 1.1rem; font-weight: 800; margin-bottom: 6px; }
+  .sched-range { font-size: .85rem; opacity: .85; }
+  .sched-earlybird {
+    background: var(--yellow); color: var(--ink);
+    font-size: .78rem; font-weight: 700;
+    padding: 7px 22px;
+  }
+  .sched-section { padding: 16px 22px 10px; background: #fff; }
+  .sched-section-title {
+    font-size: .75rem; font-weight: 700; color: var(--smoke);
+    text-transform: uppercase; letter-spacing: .07em;
+    margin-bottom: 10px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  .sched-time { font-size: .82rem; color: var(--blue-dark); font-weight: 600; margin-bottom: 8px; }
+  .sched-dates {
+    display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 4px;
+  }
+  .sched-date-chip {
+    background: var(--paper); border: 1px solid var(--line);
+    border-radius: 6px; padding: 5px 10px;
+    font-size: .82rem; font-weight: 700; color: var(--ink);
+  }
+  .sched-iv-section { padding: 14px 22px 18px; background: #edf6ff; }
+  .sched-iv-title {
+    font-size: .75rem; font-weight: 700; color: var(--blue-dark);
+    text-transform: uppercase; letter-spacing: .07em;
+    margin-bottom: 10px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--blue-light);
+  }
+
+
+  /* ===== FAQ SECTION ===== */
+  .faq { padding: 80px 0; background: var(--paper); }
+  .faq-list { max-width: 760px; margin: 48px auto 0; }
+  .faq-item {
+    border: 1.5px solid var(--line);
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background: #fff;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  .faq-item:nth-child(1) { animation-delay: 0.1s; }
+  .faq-item:nth-child(2) { animation-delay: 0.2s; }
+  .faq-item:nth-child(3) { animation-delay: 0.3s; }
+  .faq-item:nth-child(4) { animation-delay: 0.4s; }
+  .faq-item:nth-child(5) { animation-delay: 0.5s; }
+  .faq-item:nth-child(6) { animation-delay: 0.6s; }
+  .faq-item:nth-child(7) { animation-delay: 0.7s; }
+  .faq-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,136,203,.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .faq-q {
+    width: 100%; text-align: left;
+    padding: 20px 24px;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    background: none; border: none; cursor: pointer;
+    font-size: 1rem; font-weight: 700; color: var(--ink);
+    line-height: 1.45;
+  }
+  .faq-q:hover { color: var(--blue); }
+  .faq-icon {
+    flex-shrink: 0; width: 24px; height: 24px;
+    border-radius: 50%; background: var(--paper);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; font-weight: 700; color: var(--blue);
+    transition: transform .25s;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0; overflow: hidden;
+    transition: max-height .35s ease, padding .25s;
+    padding: 0 24px;
+  }
+  .faq-item.open .faq-a {
+    max-height: 400px;
+    padding: 0 24px 22px;
+  }
+  .faq-a p {
+    font-size: .93rem; color: var(--smoke); line-height: 1.8; margin: 0;
+  }
+  .faq-a p + p { margin-top: 10px; }
+  .faq-a .highlight {
+    display: inline-block; margin-top: 10px;
+    background: #edf6ff; border-left: 3px solid var(--blue);
+    padding: 8px 14px; border-radius: 0 8px 8px 0;
+    font-size: .87rem; color: var(--blue-dark); font-weight: 600;
+  }
+  .faq-cta {
+    text-align: center; margin-top: 40px;
+  }
+  .faq-cta p { color: var(--smoke); margin-bottom: 18px; font-size: .95rem; }
+
+
+  /* ===== MOBILE FIXES (max-width: 480px) ===== */
+  @media (max-width: 480px) {
+    /* Prevent fixed widths from overflowing on small screens */
+    .hero-sub        { max-width: 100%; }
+    .section-sub     { max-width: 100%; }
+    .iv-break-text   { max-width: 100%; }
+    .testi-content   { max-width: 100%; }
+    .faq-list        { max-width: 100%; }
+    .price-card      { max-width: 100%; }
+
+    /* Buttons stack on very small screens */
+    .hero-actions    { flex-direction: column; }
+    .btn-primary, .btn-secondary { width: 100%; justify-content: center; text-align: center; }
+    .final-actions   { flex-direction: column; align-items: center; }
+    .inline-cta .btn-row { flex-direction: column; align-items: center; }
+
+    /* Hero stats: smaller gap */
+    .hero-stats      { flex-wrap: wrap; gap: 16px; }
+
+    /* Schedule date chips slightly smaller */
+    .sched-date-chip { font-size: .75rem; padding: 4px 8px; }
+
+    /* FAQ answer text */
+    .faq-q           { font-size: .92rem; padding: 16px 18px; }
+    .faq-a           { padding: 0 18px; }
+    .faq-item.open .faq-a { padding: 0 18px 18px; }
+
+    /* Testimonial blockquote */
+    .testi-slide blockquote { font-size: .92rem; }
+
+    /* Classroom banner caption */
+    .classroom-banner-caption { font-size: .82rem; padding: 16px 18px 14px; }
+
+    /* ===== 4 EDITS MOBILE OPTIMIZATION ===== */
+
+    /* 修改一：身份識別行 - mobile 上稍微縮小但保持可讀 */
+    p[style*="display:inline-flex"][style*="gap:8px"] {
+      font-size: 0.95rem !important;
+      gap: 6px 12px !important;
+      margin-bottom: 24px !important;
+    }
+
+    /* 修改二：CTA 三層設計 - 確保 mobile 上堆疊整齊 */
+    .hero-actions[style*="flex-direction"] {
+      gap: 10px !important;
+      align-items: stretch !important;
+    }
+    .hero-actions[style*="flex-direction"] a {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    /* 修改三：Before/After 卡片 - mobile 單列顯示 */
+    [style*="grid-template-columns:repeat(auto-fit"]  {
+      grid-template-columns: 1fr !important;
+      gap: 16px !important;
+    }
+
+    /* 修改四：課堂實況影片 - mobile 上優化播放器 */
+    #course-video {
+      padding: 32px 0 !important;
+    }
+    #course-video h2 {
+      font-size: 1.2rem !important;
+    }
+    #course-video p {
+      font-size: 0.85rem !important;
+      margin-bottom: 20px !important;
+    }
+    #course-video video {
+      border-radius: 8px !important;
+    }
+  }
+
+
+  /* ===== UNIVERSAL OVERFLOW PREVENTION (Wix iframe safe) ===== */
+  *, *::before, *::after {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  img, video, iframe, embed, object { max-width: 100%; }
+
+  /* Text elements — always wrap, never overflow */
+  p, h1, h2, h3, h4, li, blockquote, span, a {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Remove fixed max-widths that can cause clipping in narrow iframes */
+  .hero-sub    { max-width: 100%; }
+  .section-sub { max-width: 100%; }
+  .iv-break-text { max-width: 100%; min-width: 0; }
+  .testi-content { max-width: 100%; }
+  .faq-list    { max-width: 100%; }
+
+  /* Ensure grids never force overflow */
+  .hero-grid, .problem-grid, .features-grid, .standards-grid,
+  .schedule-grid, .photo-strip-grid, .graduation-inner, .equipment-row {
+    min-width: 0;
+  }
+  .hero-grid > *, .graduation-inner > *, .equipment-row > * { min-width: 0; }
+
+  /* Buttons — wrap on small containers */
+  .hero-actions, .final-actions, .inline-cta .btn-row {
+    flex-wrap: wrap;
+  }
+  .btn-primary, .btn-secondary { min-width: 0; }
+
+
+  /* Secondary button on LIGHT background CTAs */
+  .inline-cta:not(.dark) .btn-secondary {
+    border-color: var(--blue);
+    color: var(--blue);
+  }
+  .inline-cta:not(.dark) .btn-secondary:hover {
+    border-color: var(--blue-dark);
+    color: var(--blue-dark);
+    background: rgba(0,136,203,.06);
+  }
+
+  /* ===== REVEAL ANIMATIONS ===== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== CUSTOM CURSOR ===== */
+  .custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #0088cb 0%, #0088cb 40%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-10px, -10px);
+    box-shadow: 0 0 15px rgba(0, 136, 203, 0.6);
+    transition: transform 0.1s ease;
+  }
+  .custom-cursor.hovering {
+    transform: translate(-10px, -10px) scale(1.5);
+    box-shadow: 0 0 25px rgba(0, 136, 203, 0.8);
+  }
+
+  @media (pointer: coarse) {
+    .custom-cursor {
+      display: none;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════ -->
+<section class="hero">
+  <!-- IMAGE ZONE 1: swap the src below after uploading your hero background photo to Wix Media -->
+  <div class="hero-bg-img"></div>
+
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Left: copy -->
+      <div>
+        <div class="badge"><span class="badge-dot"></span> 2026 新班招生中 · 名額有限</div>
+        <h1>想學抽血入行，<br>但唔知從何開始？<br><small style="font-size: 0.6em; font-weight: normal; display: block; margin-top: 0.5em;">唔止一張證書，係你嘅職場競爭力</small></h1>
+        <p style="display:inline-flex; flex-wrap:wrap; gap:8px 16px; margin-bottom:32px; font-size:1.25rem; font-weight:600; color:rgba(255,255,255,0.9);">
+          <span>適合零經驗轉行人士</span>
+          <span>｜</span>
+          <span>護理系學生</span>
+          <span>｜</span>
+          <span>現職醫護進修</span>
+        </p>
+        <div class="hero-actions" style="flex-direction:column; gap:12px; align-items:flex-start;">
+          <!-- 低門檻：看影片 -->
+          <a href="#course-video" class="btn-primary" style="width:100%; max-width:360px; text-align:center;">
+            ▶ 先睇 60 秒課堂實況
+          </a>
+          <!-- 中門檻：WhatsApp 諮詢 -->
+          <a href="https://wa.me/85269063436?text=你好，我想了解真人抽血課程，想問下適唔適合我？" class="btn-outline" style="width:100%; max-width:360px; text-align:center; background:rgba(255,255,255,0.2); border:2px solid rgba(255,255,255,0.4); color:#fff; padding:14px 28px; border-radius:8px; text-decoration:none; font-weight:600;">
+            💬 WhatsApp 免費諮詢
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-num" id="stat-graduates">1,500+</div><div class="stat-label">歷屆畢業生</div></div>
+          <div class="stat"><div class="stat-num">8 週</div><div class="stat-label">密集式培訓</div></div>
+          <div class="stat"><div class="stat-num">100%</div><div class="stat-label">真人實操考核</div></div>
+        </div>
+      </div>
+
+      <!-- Right: price card -->
+      <div class="price-card">
+        <div class="price-card-label">限時優惠方案</div>
+        <div class="price-row">
+          <span class="price-original">HK$12,000</span>
+          <span class="price-now">HK$9,800</span>
+        </div>
+        <span class="price-save">即省 $2,200</span>
+        <ul class="price-features">
+          <li><span class="check-icon">✓</span> 58 小時理論 + 真人實習</li>
+          <li><span class="check-icon">✓</span> 涵蓋抽血、IV、ECG 技能</li>
+          <li><span class="check-icon">✓</span> 星期五班 / 星期日班可選</li>
+          <li><span class="check-icon">✓</span> 導師手把手指導糾正</li>
+          <li><span class="check-icon">✓</span> 通過考核即獲專業證書</li>
+          <li><span class="check-icon">✓</span> 可預繳 HK$5,000 留位</li>
+        </ul>
+        <a href="https://www.hkild.com/signup" class="btn-primary" onclick="wixOpen('https://www.hkild.com/signup');return false;">鎖定 2026 專業學額 →</a>
+        <p class="price-card-note">名額有限，額滿即止</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     LIVE CLASSROOM VIDEO
+═══════════════════════════════════════════════════ -->
+<section id="course-video" style="background:var(--ink); padding:48px 0;">
+  <div class="container" style="max-width:800px;">
+    <h2 style="color:#fff; text-align:center; font-size:1.4rem; margin-bottom:8px;">
+      課堂實況：真人抽血訓練
+    </h2>
+    <p style="color:rgba(255,255,255,0.6); text-align:center; font-size:0.9rem; margin-bottom:28px;">
+      導師全程指導，學員喺真人手臂上練習靜脈穿刺
+    </p>
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      controls
+      style="width:100%; border-radius:12px; box-shadow:0 4px 30px rgba(0,0,0,0.4);"
+      poster="https://static.wixstatic.com/media/2b1d5d_0189e01911134a58899ee944cbce59f0~mv2.jpeg"
+    >
+      <source src="https://video.wixstatic.com/video/2b1d5d_5283bf16469641138f8d1b2690b88cc3/1080p/mp4/file.mp4" type="video/mp4">
+      你的瀏覽器不支援 HTML5 影片。
+    </video>
+  </div>
+</section>
+
+<!-- Quick CTA Button (Fast Track to Schedule) -->
+<div style="text-align: center; padding: 2rem 1rem; background: #f8f9fa; border-top: 1px solid #e0e0e0;">
+  <button onclick="document.getElementById('schedule').scrollIntoView({behavior:'smooth'});" style="
+    display: inline-block;
+    background-color: #003d6b;
+    color: white;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+  " onmouseover="this.style.backgroundColor='#002a4f'" onmouseout="this.style.backgroundColor='#003d6b'">
+    查看開班時間及學費 →
+  </button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     IMAGE ZONE 2: Photo Strip  (3 classroom photos)
+     Upload 3 photos to Wix Media, replace the src values below.
+     Good choices: students practising, instructor teaching, close-up of technique.
+═══════════════════════════════════════════════════ -->
+<section class="photo-strip reveal">
+  <div class="container">
+    <div class="photo-strip-grid">
+      <!-- Replace src with your actual image URLs from Wix Media Manager -->
+      <img src="https://static.wixstatic.com/media/2b1d5d_d90c6ef102254fc79dda7be2feb55f49~mv2.jpeg" alt="HKILD 課堂相片 1" loading="lazy">
+      <img src="https://static.wixstatic.com/media/2b1d5d_63def1c767bc43d9bcb6fc8be56a3b89~mv2.jpeg" alt="HKILD 課堂相片 2" loading="lazy">
+      <img src="https://static.wixstatic.com/media/2b1d5d_575283c04b8b4184b95af164c0785645~mv2.jpeg" alt="HKILD 課堂相片 3" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     PROBLEM / AGITATE
+═══════════════════════════════════════════════════ -->
+<section class="problem reveal">
+  <div class="container">
+    <div class="section-tag">報讀前，誠實問自己</div>
+    <h2 class="section-heading">你想輕鬆攞張紙，<br>定真正學識抽血？</h2>
+    <p class="section-sub">選錯課程，浪費嘅唔止係學費，仲有你嘅時間同職業前途。<br><br>坊間課程成功幾針就畢業？HKILD 堅持 8 星期真人實操 + 嚴格考核，確保你畢業後即具備臨床實戰能力，經得起職場考驗。</p>
+
+    <!-- Price Positioning -->
+    <div style="background: linear-gradient(135deg, #a6d1ee 0%, #f5f7fa 100%); border-left: 4px solid #0088cb; padding: 20px 24px; border-radius: 8px; margin: 32px 0; text-align: center;">
+      <p style="font-weight: 600; color: #0088cb; margin: 0; font-size: 1.1rem;">💰 學費便宜，取證容易?</p>
+      <p style="color: #5a6a7a; margin: 8px 0 0 0; font-size: 0.95rem;">我哋相信：HKILD抽血課程價錢公道,能真正授予學員實用醫護技術,從而增強競爭力,做到對他們的職業前途負責</p>
+    </div>
+
+    <div class="problem-grid">
+      <div class="problem-card bad">
+        <div class="problem-icon">⚠️</div>
+        <h3>坊間短期課程</h3>
+        <p>容易畢業，但臨床實戰時連搵血管都有困難，僱主面試見到你手勢就知底。試用期未必過得到，被淘汰風險極高。</p>
+      </div>
+      <div class="problem-card good">
+        <div class="problem-icon">🛡️</div>
+        <h3>HKILD 抽血課程</h3>
+        <p>過程嚴格，但確保你掌握專業抽血技術。入職後即能獨立工作，經得起真正考驗。僱主見到 HKILD 證書，對你實力有信心。</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonial reveal">
+  <div class="container">
+    <div class="testi-content">
+      <div class="section-tag" style="color:var(--blue-light); justify-content:center;">學員真實分享</div>
+      <div class="testi-stars">★★★★★</div>
+
+      <!-- Before/After Success Stories -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:24px; margin-top:32px; margin-bottom:48px;">
+        <!-- 梁同學 -->
+        <div style="background:var(--card); border-radius:12px; padding:28px; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <p style="font-weight:700; font-size:1.05rem; margin-bottom:12px; color:var(--ink);">梁同學</p>
+          <p style="color:var(--smoke); font-size:0.9rem; margin-bottom:6px;">
+            <span style="color:var(--red); font-weight:600;">之前：</span>從未接觸醫護行業，唔知自己適唔適合
+          </p>
+          <p style="color:var(--smoke); font-size:0.9rem;">
+            <span style="color:var(--blue); font-weight:600;">之後：</span>課程未完成已獲聘專科診所 Clinic Assistant
+          </p>
+        </div>
+
+        <!-- NHS舊生 -->
+        <div style="background:var(--card); border-radius:12px; padding:28px; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <p style="font-weight:700; font-size:1.05rem; margin-bottom:12px; color:var(--ink);">英國NHS舊生</p>
+          <p style="color:var(--smoke); font-size:0.9rem; margin-bottom:6px;">
+            <span style="color:var(--red); font-weight:600;">之前：</span>移民英國，搵工冇方向
+          </p>
+          <p style="color:var(--smoke); font-size:0.9rem;">
+            <span style="color:var(--blue); font-weight:600;">之後：</span>靠HKILD Reference成功入職NHS
+          </p>
+        </div>
+
+        <!-- Codly -->
+        <div style="background:var(--card); border-radius:12px; padding:28px; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <p style="font-weight:700; font-size:1.05rem; margin-bottom:12px; color:var(--ink);">Codly</p>
+          <p style="color:var(--smoke); font-size:0.9rem; margin-bottom:6px;">
+            <span style="color:var(--red); font-weight:600;">之前：</span>想做護士，但未有任何臨床經驗
+          </p>
+          <p style="color:var(--smoke); font-size:0.9rem;">
+            <span style="color:var(--blue); font-weight:600;">之後：</span>入學前已掌握真人抽血技術，帶住實戰信心踏入護理系
+          </p>
+        </div>
+      </div>
+
+      <div class="testi-slider-wrap">
+        <div class="testi-track" id="testiTrack">
+
+          <!-- Slide 1 -->
+          <div class="testi-slide">
+            <div class="testi-avatar-placeholder">🎓</div>
+            <span class="testi-badge">📍 專科診所 Clinic Assistant</span>
+            <blockquote>
+              「好開心搵到工，成功轉到行！從來冇接觸過醫護，但喺 HKILD 報讀抽血班之後，兩個月通過筆試實習試，未畢業已經被專科診所聘請做 Clinic Assistant。多謝 Ray Sir 嘅悉心教導！」
+            </blockquote>
+            <div class="testi-author">梁同學</div>
+            <div class="testi-role">2025 年畢業生 · 未畢業已成功獲聘專科診所</div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testi-slide">
+            <div class="testi-avatar-placeholder">👨‍⚕️</div>
+            <span class="testi-badge">📍 正式加入醫管局抽血隊！</span>
+            <blockquote>
+              「Ray Sir，新界西抽血隊請咗我啦！😆 多謝你教我面試技巧，我真係好開心！課程唔止教識技術，連入行嘅路都幫我鋪好咗！」
+            </blockquote>
+            <div class="testi-author">陳同學</div>
+            <div class="testi-role">2024 年畢業生 · 成功加入醫管局新界西抽血隊</div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testi-slide">
+            <div class="testi-avatar-placeholder">👩‍⚕️</div>
+            <span class="testi-badge">📍 成功入職公立醫院 | 薪酬提升！</span>
+            <blockquote>
+              「之前同你講屯門醫院見抽血員個位，啱啱收到 Offer 啦！🎉🎉 多謝 Ray Sir 幫我準備面試，令我充足準備！真係唔敢相信咁快就成功！」
+            </blockquote>
+            <div class="testi-author">李同學</div>
+            <div class="testi-role">2024 年畢業生 · 成功入職公立醫院抽血員</div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="testi-slide">
+            <div class="testi-avatar-placeholder">👩‍⚕️</div>
+            <span class="testi-badge">📍 由體檢助理成功轉職醫院抽血員！</span>
+            <blockquote>
+              「我一直想學抽血，見到 HKILD 呢個課程就即刻報讀！課程不只教授技術，導師仲幫我準備面試技巧！考完證書後，我收到醫院抽血員的面試機會，仲成功上咗位！好感謝 Ray Sir！」
+            </blockquote>
+            <div class="testi-author">彭同學</div>
+            <div class="testi-role">2024 年畢業生 · 由體檢中心轉職醫院，薪酬提升</div>
+          </div>
+
+        </div><!-- /testi-track -->
+      </div><!-- /testi-slider-wrap -->
+
+      <div class="testi-arrows">
+        <button class="testi-arrow" id="testiPrev">&#8592;</button>
+        <button class="testi-arrow" id="testiNext">&#8594;</button>
+      </div>
+      <div class="testi-dots" id="testiDots">
+        <button class="testi-dot active"></button>
+        <button class="testi-dot"></button>
+        <button class="testi-dot"></button>
+        <button class="testi-dot"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INLINE CTA 1 — after problem -->
+<div class="inline-cta reveal">
+  <strong>準備好改變你的職涯方向？</strong>
+  <p>唔需要護士學歷，只需 8 週，掌握一技在手。</p>
+  <div class="btn-row">
+    <a href="https://wa.me/85269063436" class="btn-primary" onclick="wixOpen('https://wa.me/85269063436');return false;">💬 WhatsApp 免費諮詢</a>
+    <a href="https://www.hkild.com/signup" class="btn-secondary" onclick="wixOpen('https://www.hkild.com/signup');return false;">投資自己，現在報名 →</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     FEATURES
+═══════════════════════════════════════════════════ -->
+<section class="features reveal">
+  <div class="container">
+    <div class="section-tag">課程重點</div>
+    <h2 class="section-heading">四大核心優勢，助你快速轉型</h2>
+    <p class="section-sub">由零經驗起步到具備臨床標準，我們幫你打好每一步基礎。</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-num">01</div>
+        <h3>紮實基礎 · 拒絕走捷徑</h3>
+        <p>充足真人實習時數，涵蓋抽血、留置靜脈導管、心電圖機操作 , 一次過做好全面職前準備。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">02</div>
+        <h3>系統教學 · 零經驗起步</h3>
+        <p>從基礎理論教起，循序漸進至實操。導師手把手糾正每個細節，避免養成 不良習慣，建立嚴謹臨床標準。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">03</div>
+        <h3>嚴格考核 · 實力保證</h3>
+        <p>「證實學得識，先發證書」—— 正因考核嚴謹，僱主見到 HKILD 證書自然對你技術有信心，成為你最強競爭力。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">04</div>
+        <h3>高效轉型 · 8 週打造醫護實力</h3>
+        <p>專為轉職及升職人士設計，密集式培訓核心技能。畢業時已具備應徵職位所需實戰技能。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     CLASSROOM BANNER (full-width photo)
+═══════════════════════════════════════════════════ -->
+<div class="classroom-banner reveal">
+  <img src="https://static.wixstatic.com/media/7b5cea_7e861c3a2b6442cba34effb226079eb8~mv2.jpg" alt="HKILD 真實課堂環境" loading="lazy">
+  <div class="classroom-banner-caption">
+    真實課堂環境 · 小班教學 · <span>每位學員都獲得充足練習機會</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     CURRICULUM (dark band)
+═══════════════════════════════════════════════════ -->
+<section class="curriculum reveal">
+  <div class="container">
+    <div class="section-tag">課程內容</div>
+    <h2 class="section-heading">理論與實戰並重<br>全面涵蓋一系列有價值醫療技術</h2>
+    <p class="section-sub">嚴格依照醫療臨床標準，堅持完整教授所有感染控制及理論知識，絕不刪減。</p>
+    <div class="curr-grid">
+      <div class="curr-item"><span class="check-icon">✓</span> 感染預防及控制</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 基本生理及解剖學</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 抽血器材認識</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 抽血程序及護理</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 真人抽血實習</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 醫學化驗項目認識</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 血種菌介紹</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 兒科抽血介紹</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 血糖檢測實習</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 心電圖機操作</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 靜脈輸液認識</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 留置靜脈導管器材認識</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 留置靜脈導管程序及護理</div>
+      <div class="curr-item"><span class="check-icon">✓</span> 真人留置靜脈導管實習</div>
+    </div>
+  </div>
+</section>
+
+<!-- INLINE CTA 2 — after curriculum -->
+<div class="inline-cta reveal dark reveal">
+  <strong>14 個核心模組，一次全部掌握</strong>
+  <p>由零開始，8 週後具備應徵醫護崗位的完整實力。</p>
+  <div class="btn-row">
+    <a href="https://wa.me/85269063436" class="btn-primary" onclick="wixOpen('https://wa.me/85269063436');return false;">💬 WhatsApp 查詢課程</a>
+    <a href="https://www.hkild.com/signup" class="btn-secondary" onclick="wixOpen('https://www.hkild.com/signup');return false;">立即鎖定學額 →</a>
+  </div>
+</div>
+
+
+
+<!-- ═══════════════════════════════════════════════════
+     IV CIRCLE BREAK
+═══════════════════════════════════════════════════ -->
+<div class="iv-break reveal">
+  <img src="https://static.wixstatic.com/media/2b1d5d_0189e01911134a58899ee944cbce59f0~mv2.jpeg" alt="學員完成留置靜脈導管實習" loading="lazy">
+  <div class="iv-break-text">
+    <div class="section-tag">真人實習</div>
+    <h2>每位學員<br>親手完成留置靜脈導管</h2>
+    <p>課程涵蓋留置靜脈導管全套操作，由消毒到固定，每個步驟均在導師監督下於真人身上完成，確保技術達到臨床標準。</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     GRADUATION STANDARDS
+═══════════════════════════════════════════════════ -->
+<section class="standards reveal">
+  <div class="container">
+    <div class="section-tag">畢業要求</div>
+    <h2 class="section-heading">證書由實力換取，絕非「付費即有」</h2>
+    <p class="section-sub">HKILD 設高標準畢業門檻，確保每位畢業生都做好臨床準備。</p>
+    <div class="standards-grid">
+      <div class="standard-card">
+        <div class="standard-icon">📋</div>
+        <h3>出席率 ≥ 90%</h3>
+        <p>抽血及 IV 部分獨立計算，缺一不可。</p>
+      </div>
+      <div class="standard-card">
+        <div class="standard-icon">✍️</div>
+        <h3>雙重考核</h3>
+        <p>必須通過筆試及 100% 真人實習考試，缺一不可。</p>
+      </div>
+      <div class="standard-card">
+        <div class="standard-icon">🏅</div>
+        <h3>不合格者</h3>
+        <p>只獲發出席證明，絕不妥協。拿到證書代表你已準備就緒。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     GRADUATION SHOWCASE
+═══════════════════════════════════════════════════ -->
+<section class="graduation reveal">
+  <div class="container">
+    <div class="graduation-inner">
+      <div class="graduation-img">
+        <img src="https://static.wixstatic.com/media/2b1d5d_963661da978d4b828b1a77fb552ef1ba~mv2.jpeg" alt="HKILD 學員畢業典禮，手持證書合照" loading="lazy">
+      </div>
+      <div class="graduation-text">
+        <div class="section-tag">畢業成果</div>
+        <h2>每一張證書，<br>背後都係導師及學員的努力付出</h2>
+        <p>完成 58 小時課程、通過筆試及真人實習考核，先獲頒發 HKILD 專業證書。每位畢業生出席典禮時，都係帶著信心同實力離開。</p>
+        <div class="grad-highlight">
+          <span class="grad-highlight-icon">🏅</span>
+          通過率高但絕非容易——每位畢業生均具備臨床實戰能力
+        </div>
+        <div class="grad-highlight">
+          <span class="grad-highlight-icon">💼</span>
+          多位學員未畢業已獲診所、醫院主動聘請
+        </div>
+        <div class="grad-highlight">
+          <span class="grad-highlight-icon">🤝</span>
+          Ray Sir 親自頒發證書，見證每位學員的成長
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     TESTIMONIAL
+     IMAGE ZONE 3: student / instructor avatar (optional)
+═══════════════════════════════════════════════════ -->
+
+<!-- INLINE CTA 3 — after testimonials -->
+<div class="inline-cta reveal">
+  <strong>同學做到，你都可以 💪</strong>
+  <p>醫管局、私家醫院、診所、體檢中心⋯⋯ 畢業生遍佈各大小公私醫療機構。</p>
+  <div class="btn-row">
+    <a href="https://wa.me/85269063436" class="btn-primary" onclick="wixOpen('https://wa.me/85269063436');return false;">💬 WhatsApp 問一問</a>
+    <a href="https://www.hkild.com/signup" class="btn-secondary" onclick="wixOpen('https://www.hkild.com/signup');return false;">加入下一屆 →</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SCHEDULE
+═══════════════════════════════════════════════════ -->
+<section class="schedule reveal" id="schedule">
+  <div class="container">
+    <div class="section-tag">開班時間</div>
+    <h2 class="section-heading">2026 年下半年兩個班次</h2>
+    <p class="section-sub">名額有限，早鳥優惠期前報名可享 HK$9,800 學費。</p>
+    <div class="schedule-grid">
+
+      <!-- P06 — 星期五班 -->
+      <div class="sched-card">
+        <div class="sched-header">
+          <div class="sched-code">課程編號：P06-2026</div>
+          <div class="sched-day">⑤ 星期五全日班</div>
+          <div class="sched-range">26/06/2026 – 14/08/2026</div>
+        </div>
+        <div class="sched-earlybird">🐣 早鳥優惠：05/06/2026 前交學費 HK$9,800</div>
+        <div class="sched-section">
+          <div class="sched-section-title">抽血部份</div>
+          <div class="sched-time">🕙 上午10時 – 下午6時</div>
+          <div class="sched-dates">
+            <span class="sched-date-chip">26/06</span>
+            <span class="sched-date-chip">03/07</span>
+            <span class="sched-date-chip">10/07</span>
+            <span class="sched-date-chip">17/07</span>
+            <span class="sched-date-chip">24/07</span>
+            <span class="sched-date-chip">31/07</span>
+          </div>
+        </div>
+        <div class="sched-iv-section">
+          <div class="sched-iv-title">留置靜脈導管部份 (IV)</div>
+          <div class="sched-time">🕙 上午10時 – 下午7時</div>
+          <div class="sched-dates">
+            <span class="sched-date-chip">07/08</span>
+            <span class="sched-date-chip">14/08</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- P05 — 星期日班 -->
+      <div class="sched-card">
+        <div class="sched-header">
+          <div class="sched-code">課程編號：P05-2026</div>
+          <div class="sched-day">⑦ 星期日全日班</div>
+          <div class="sched-range">21/06/2026 – 09/08/2026</div>
+        </div>
+        <div class="sched-earlybird">🐣 早鳥優惠：31/05/2026 前交學費 HK$9,800</div>
+        <div class="sched-section">
+          <div class="sched-section-title">抽血部份</div>
+          <div class="sched-time">🕙 上午10時 – 下午6時</div>
+          <div class="sched-dates">
+            <span class="sched-date-chip">21/06</span>
+            <span class="sched-date-chip">28/06</span>
+            <span class="sched-date-chip">05/07</span>
+            <span class="sched-date-chip">12/07</span>
+            <span class="sched-date-chip">19/07</span>
+            <span class="sched-date-chip">26/07</span>
+          </div>
+        </div>
+        <div class="sched-iv-section">
+          <div class="sched-iv-title">留置靜脈導管部份 (IV)</div>
+          <div class="sched-time">🕙 上午10時 – 下午7時</div>
+          <div class="sched-dates">
+            <span class="sched-date-chip">02/08</span>
+            <span class="sched-date-chip">09/08</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     DETAILS
+═══════════════════════════════════════════════════ -->
+<section class="details reveal">
+  <div class="container">
+    <div class="section-tag">課程資料</div>
+    <h2 class="section-heading">報讀須知</h2>
+    <div class="details-grid">
+      <div class="detail-item">
+        <div class="detail-label">授課語言</div>
+        <div class="detail-value">粵語輔以英語醫學名詞</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">課程時數</div>
+        <div class="detail-value">58 小時</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">年齡要求</div>
+        <div class="detail-value">18–55 歲</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">學歷要求</div>
+        <div class="detail-value">中五或以上（中三需醫護經驗）</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">上課地點</div>
+        <div class="detail-value">九龍油麻地彌敦道 518-520 號 彌敦行 13 樓 C 室</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">學費</div>
+        <div class="detail-value">HK$9,800（原價 $12,000）</div>
+      </div>
+    </div>
+
+    <div class="equipment-row reveal">
+      <div class="equipment-img">
+        <img src="https://static.wixstatic.com/media/2b1d5d_c68f7240357e4250b593374a0b5b0ee2~mv2.jpeg" alt="HKILD 真實醫療設備 — 離心機及採血管" loading="lazy">
+      </div>
+      <div class="equipment-text">
+        <h3>真實醫療設備，零距離學習</h3>
+        <p>課室備有離心機、各類採血管、留置針等醫院使用的真實器材。學員由第一堂起已接觸專業設備，畢業後入職即上手，無需適應期。</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ═══════════════════════════════════════════════════
+     FAQ SECTION
+═══════════════════════════════════════════════════ -->
+<section class="faq reveal">
+  <div class="container">
+    <div class="section-tag">常見問題</div>
+    <h2 class="section-heading">你可能想知道的事</h2>
+    <p class="section-sub">有更多疑問？WhatsApp 我們，即時解答。</p>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q">
+          我完全零經驗，可以報讀嗎？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>可以！入學要求為 18–55 歲、中五或以上程度。現職醫護助理中三程度亦可接受。課程由基礎開始，無需任何抽血或醫護背景。</p>
+          <span class="highlight">📋 有疑問可 WhatsApp 69063436 查詢入學資格</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          坊間有幾百蚊的抽血課程，點解要報 HKILD？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>坊間部份課程只用膠模型手練習，學習時數只有 10 多小時，實用性非常有限。我們的課程提供 58 小時深入學習，每位學員可進行約 30 次真人抽血實習。</p>
+          <p>曾有學員先報讀假手課程，面試效果未如理想，最後還是報讀了 HKILD 真人課程——浪費了時間和金錢。</p>
+          <span class="highlight">💡 選擇對的課程，少走彎路</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          畢業後可以在哪裡工作？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>超過 1,500 位畢業生已成功進入各大醫療機構，包括醫管局、私家醫院、公私營診所、體檢中心、化驗中心、紅十字會、醫學美容等。</p>
+          <p>曾有學員由美容行業零醫護經驗，完成課程後成功獲聘新界東聯網醫院「麻醉助理」一職。</p>
+          <span class="highlight">🏥 學會網頁及 Facebook 定期轉載醫護機構優先聘用畢業生的招聘廣告</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          證書有冇期限？醫管局認唔認？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>證書永久有效，從簽發日期起沒有期限。</p>
+          <p>香港目前沒有抽血員統一認可機制。醫管局只承認內部在職培訓，但招聘時會優先考慮有抽血培訓背景的應徵者。大量 HKILD 畢業生憑抽血技能成功獲聘，入職後再完成 HA 內部訓練。</p>
+          <span class="highlight">🌍 已有 HKILD 畢業生現職英國 NHS 抽血員</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          學費可以分期嗎？有冇持續進修基金？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>課程目前不獲「持續進修基金」資助，亦未設分期付款。但可預繳 HK$5,000 先行留位，餘款於開課前繳清。</p>
+          <p>早鳥優惠：開課前 3 星期繳費可享 HK$9,800 學費（原價 $12,000）。如同時報讀抽血 + 注射課程，雙課組合優惠 $12,700（原價 $15,300）。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          不合格可以補考嗎？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>可以。課程設有補考制度，補考不需額外收費。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          導師是什麼背景？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>主任導師為前英軍醫護人員（專科手術室護理），同時是美國心臟協會（AHA）現任導師，具有超過 20 年教學經驗，並不定期於醫管局醫院及其他機構兼任導師。</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="faq-cta">
+      <p>仲有其他問題？我們樂意解答 👇</p>
+      <a href="https://wa.me/85269063436" class="btn-primary" onclick="wixOpen('https://wa.me/85269063436');return false;">💬 WhatsApp 即時查詢</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     FINAL CTA
+═══════════════════════════════════════════════════ -->
+<section class="final-cta">
+  <div class="container">
+    <h2>想喺醫護行業突圍而出？<br>唔止要有心，更要有「手」</h2>
+    <p>用少於一個月人工，換取一個不會被輕易取代的醫療手藝。名額有限，立即行動。</p>
+    <div class="final-actions">
+      <a href="https://www.hkild.com/signup" class="btn-primary" onclick="wixOpen('https://www.hkild.com/signup');return false;">立即報名 →</a>
+      <a href="https://wa.me/85269063436" class="btn-secondary" onclick="wixOpen('https://wa.me/85269063436');return false;">WhatsApp 查詢詳情</a>
+    </div>
+  </div>
+</section>
+
+<script>
+
+   // ===== CENTRALIZED INITIALIZATION =====
+  function initializeAllFeatures() {
+    // 1. Tracking
+    initTracking();
+    setupSectionTracking();
+    setupButtonTracking();
+
+    // 2. Scroll reveal animations
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // 3. Testimonial slider
+    const track  = document.getElementById('testiTrack');
+    const dots   = document.querySelectorAll('.testi-dot');
+    const slides = document.querySelectorAll('.testi-slide');
+    let cur = 0;
+
+    function goTo(n) {
+      cur = (n + slides.length) % slides.length;
+      if (track) track.style.transform = `translateX(-${cur * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === cur));
+    }
+
+    if (document.getElementById('testiNext')) {
+      document.getElementById('testiNext').addEventListener('click', () => goTo(cur + 1));
+    }
+    if (document.getElementById('testiPrev')) {
+      document.getElementById('testiPrev').addEventListener('click', () => goTo(cur - 1));
+    }
+    dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
+
+    // Auto-advance every 5s
+    setInterval(() => goTo(cur + 1), 5000);
+
+    // 4. FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        if (!item) return;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // 4.5 Number counter animation for statistics
+    const graduatesEl = document.getElementById('stat-graduates');
+    if (graduatesEl) {
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounter(graduatesEl, 0, 1500, 1500, '+');
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      counterObserver.observe(graduatesEl);
+    }
+
+    // Helper function for counter animation
+    function animateCounter(el, start, end, duration, suffix) {
+      const range = end - start;
+      const increment = range / (duration / 50);
+      let current = start;
+
+      const interval = setInterval(() => {
+        current += increment;
+        if (current >= end) {
+          current = end;
+          clearInterval(interval);
+        }
+        el.textContent = Math.floor(current).toLocaleString() + suffix;
+      }, 50);
+    }
+
+    // 5. Wix iframe height notification
+    function notifyWixHeight() {
+      const h = Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight
+      );
+      window.parent.postMessage({ type: 'wix-height', height: h }, '*');
+      if (window.Wix) window.Wix.setHeight(h);
+    }
+    window.addEventListener('load', notifyWixHeight);
+    window.addEventListener('resize', notifyWixHeight);
+    setTimeout(notifyWixHeight, 800);
+    setTimeout(notifyWixHeight, 2000);
+  }
+
+  // Initialize once DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeAllFeatures);
+  } else {
+    initializeAllFeatures();
+  }
+
+
+  // Wix iframe link opener — tries popup first, falls back to top navigation
+  function wixOpen(url) {
+    var w = window.open(url, '_blank');
+    if (!w || w.closed || typeof w.closed === 'undefined') {
+      // Popup blocked — navigate top frame instead
+      try { window.top.location.href = url; }
+      catch(e) { window.location.href = url; }
+    }
+  }
+
+</script>
+
+<!-- GSAP Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  // Custom Cursor & GSAP animations — wait for DOM ready
+  function initCustomCursorAndGSAP() {
+    // Custom Cursor
+    const cursor = document.createElement('div');
+    cursor.className = 'custom-cursor';
+    document.body.appendChild(cursor);
+
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    if (!isTouchDevice) {
+      document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+      });
+
+      // Hover effect
+      document.querySelectorAll('a, button, .btn-primary, .btn-secondary').forEach(el => {
+        el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+        el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+      });
+    }
+
+    // GSAP scroll animations (if library loads)
+    if (window.gsap && typeof ScrollTrigger !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+
+      document.querySelectorAll('.reveal').forEach(element => {
+        gsap.to(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 85%',
+            onEnter: () => element.classList.add('visible')
+          }
+        });
+      });
+    }
+  }
+
+  // Initialize after DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCustomCursorAndGSAP);
+  } else {
+    initCustomCursorAndGSAP();
+  }
+</script>
+
+</body>
+</html>
