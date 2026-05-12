@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HKILD 香港生命開展學會 | 專業醫護技能培訓 | 抽血課程及注射課程</title>
+  <meta name="description" content="HKILD 香港生命開展學會 — 超過12年醫護培訓經驗，提供真人抽血證書課程及注射技巧課程。小班教學、真人實習，助你掌握專業醫護技能，開展穩定職業新路。">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ===== DESIGN SYSTEM ===== */
+    :root {
+      --ink: #0a1a2e;
+      --paper: #f5f7fa;
+      --blue: #0088cb;
+      --blue-dark: #0070a8;
+      --blue-light: #a6d1ee;
+      --red: #ed1c24;
+      --red-hover: #cc1520;
+      --yellow: #ffcb05;
+      --smoke: #5a6a7a;
+      --line: #d8e4ed;
+      --card: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Noto Sans TC', Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; width: 100%; }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1 { font-size: 3.2rem; font-weight: 900; line-height: 1.2; margin-bottom: 20px; }
+    h2 { font-size: 2.2rem; font-weight: 700; line-height: 1.3; margin-bottom: 16px; }
+    h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 12px; }
+    p { font-size: 1rem; line-height: 1.8; margin-bottom: 16px; color: var(--smoke); }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 32px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      gap: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%);
+      transition: width 0.5s, height 0.5s;
+      pointer-events: none;
+    }
+
+    .btn:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+
+    .btn-primary {
+      background: var(--red);
+      color: white;
+    }
+    .btn-primary:hover {
+      background: var(--red-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(237, 28, 36, 0.3);
+    }
+
+    .btn-secondary {
+      background: var(--blue);
+      color: white;
+    }
+    .btn-secondary:hover {
+      background: var(--blue-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(0, 112, 168, 0.3);
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      position: relative;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #f5f7fa 0%, #a6d1ee 100%);
+      overflow: visible;
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://static.wixstatic.com/media/2b1d5d_34d3c3b0e302473ca3e801fd23b63068~mv2.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      display: none;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: transparent;
+      display: none;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      padding: 80px 24px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: var(--ink);
+      background: transparent;
+      padding: 0;
+    }
+
+    .hero-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
+    .hero-logo img {
+      height: 180px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+      animation: slideInLeft 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s backwards;
+    }
+
+    .hero-image {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle, rgba(166, 209, 238, 0.25), transparent 65%);
+      background-size: 550px 550px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero-image::before {
+      content: '';
+      position: absolute;
+      width: 410px;
+      height: 410px;
+      border: 3px solid rgba(0, 136, 203, 0.15);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .hero-image::after {
+      content: '';
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border: 12px solid var(--blue);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      transition: all 0.3s ease;
+      display: none;
+    }
+
+    .hero-image img {
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+      animation: slideInRight 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s backwards, float 4s ease-in-out 1.2s infinite;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .hero-image:hover img {
+      box-shadow: 0 24px 64px rgba(0, 136, 203, 0.25);
+    }
+
+    .hero-image:hover::after {
+      box-shadow: 0 12px 40px rgba(0, 136, 203, 0.2);
+      border-color: var(--blue);
+    }
+
+    .hero-image:hover::before {
+      border-color: rgba(0, 136, 203, 0.3);
+      box-shadow: 0 8px 24px rgba(0, 136, 203, 0.1);
+    }
+
+    /* ===== ADDITIONAL HERO CIRCLES ===== */
+    .hero-image .circle-img {
+      position: absolute;
+      border-radius: 50%;
+      object-fit: cover;
+      z-index: 0;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      animation: fadeInUp 0.8s ease-out backwards;
+      transition: all 0.3s ease;
+    }
+
+    .hero-image .circle-img:nth-child(1) {
+      width: 200px;
+      height: 200px;
+      top: -50px;
+      right: -70px;
+      animation-delay: 0.5s;
+    }
+
+    .hero-image .circle-img:nth-child(2) {
+      width: 180px;
+      height: 180px;
+      bottom: -60px;
+      left: -50px;
+      animation-delay: 0.7s;
+    }
+
+    .hero-image:hover .circle-img:nth-of-type(2) {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 16px 48px rgba(0, 136, 203, 0.2);
+    }
+
+    .hero-image:hover .circle-img:nth-of-type(3) {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 16px 48px rgba(0, 136, 203, 0.2);
+    }
+
+    .hero-content h1 {
+      color: var(--blue);
+      margin-bottom: 24px;
+      font-size: 2.3rem;
+      line-height: 1.15;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      animation: slideInLeft 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s backwards;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: var(--smoke);
+      margin-bottom: 48px;
+      font-style: italic;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: slideInLeft 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s backwards;
+    }
+
+    .hero-features {
+      list-style: none;
+      margin: 40px 0;
+    }
+
+    .hero-features li {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 16px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--ink);
+    }
+
+    .hero-features li::before {
+      content: "✓";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--red);
+      color: white;
+      border-radius: 4px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 32px;
+      animation: fadeInUp 0.8s ease-out 0.5s backwards;
+    }
+
+    .hero-cta .btn {
+      animation: fadeInUp 0.6s ease-out backwards;
+    }
+
+    .hero-cta .btn:nth-child(1) {
+      animation-delay: 0.6s;
+    }
+
+    .hero-cta .btn:nth-child(2) {
+      animation-delay: 0.7s;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -1000px 0; }
+      100% { background-position: 1000px 0; }
+    }
+
+    /* ===== CONTENT SECTION ===== */
+    section {
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    section.alt {
+      background: white;
+    }
+
+    /* Diagonal background for visual variety */
+    section:nth-child(3) {
+      background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+    }
+
+    section:nth-child(4)::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0, 136, 203, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    section:nth-child(5)::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      left: -100px;
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(45deg, rgba(255, 203, 5, 0.05), rgba(237, 28, 36, 0.05));
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* ===== ALTERNATING LAYOUT ===== */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .content-grid.reverse {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .content-grid.reverse .text-block {
+      order: 2;
+    }
+
+    .content-grid.reverse .image-block {
+      order: 1;
+    }
+
+    .text-block h2 {
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .text-block p {
+      margin-bottom: 20px;
+    }
+
+    .text-block .btn {
+      margin-top: 32px;
+    }
+
+    .image-block {
+      position: relative;
+      height: 400px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(10, 26, 46, 0.15);
+    }
+
+    .image-block img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ===== COURSE SECTION ===== */
+    .courses-intro {
+      text-align: center;
+      margin-bottom: 60px;
+      animation: fadeInUp 0.6s ease-out backwards;
+    }
+
+    .courses-intro h2 {
+      margin-bottom: 16px;
+      animation: fadeInUp 0.6s ease-out 0.1s backwards;
+    }
+
+    .courses-intro p {
+      animation: fadeInUp 0.6s ease-out 0.2s backwards;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .course-card {
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      border: 1px solid var(--line);
+      box-shadow: 0 4px 12px rgba(10, 26, 46, 0.08);
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 0.6s ease-out backwards;
+    }
+
+    .courses-grid .course-card:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .courses-grid .course-card:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .course-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.5s;
+      pointer-events: none;
+    }
+
+    .course-card:hover::before {
+      left: 100%;
+    }
+
+    .course-card:hover {
+      transform: translateY(-12px) rotateZ(1deg);
+      box-shadow: 0 16px 40px rgba(10, 26, 46, 0.2);
+      border-color: var(--blue);
+    }
+
+    .course-badge {
+      animation: slideInLeft 0.5s ease-out 0.3s backwards;
+    }
+
+    .course-card h3 {
+      animation: slideInLeft 0.5s ease-out 0.35s backwards;
+    }
+
+    .course-badge {
+      display: inline-block;
+      background: var(--blue-light);
+      color: var(--blue-dark);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .course-highlight {
+      background: linear-gradient(135deg, rgba(0, 136, 203, 0.05), rgba(255, 203, 5, 0.05));
+      padding: 20px;
+      border-radius: 8px;
+      margin: 24px 0;
+      border-left: 4px solid var(--blue);
+    }
+
+    .course-highlight p {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--blue);
+    }
+
+    .course-features {
+      list-style: none;
+      margin: 24px 0;
+    }
+
+    .course-features li {
+      padding: 12px 0;
+      display: flex;
+      gap: 12px;
+      color: var(--smoke);
+    }
+
+    .course-features li::before {
+      content: "✓";
+      color: var(--red);
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    /* ===== WHY SECTION (TIMELINE) ===== */
+    .why-timeline {
+      position: relative;
+      padding: 40px 0;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 40px;
+      margin-bottom: 48px;
+      align-items: start;
+      animation: fadeInUp 0.6s ease-out backwards;
+    }
+
+    .why-timeline .timeline-item:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .why-timeline .timeline-item:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .why-timeline .timeline-item:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .why-timeline .timeline-item:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .timeline-marker {
+      position: relative;
+      text-align: center;
+    }
+
+    .timeline-dot {
+      width: 60px;
+      height: 60px;
+      background: var(--blue);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin: 0 auto 16px;
+      box-shadow: 0 4px 12px rgba(0, 136, 203, 0.3);
+      animation: slideInLeft 0.5s ease-out 0.1s backwards;
+      transition: all 0.3s ease;
+    }
+
+    .timeline-item:hover .timeline-dot {
+      transform: scale(1.15);
+      box-shadow: 0 8px 24px rgba(0, 136, 203, 0.5);
+    }
+
+    .timeline-content {
+      animation: slideInRight 0.5s ease-out 0.15s backwards;
+      transition: all 0.3s ease;
+    }
+
+    .timeline-item:hover .timeline-content h3 {
+      color: var(--blue);
+      transform: translateX(4px);
+    }
+
+    .timeline-line {
+      width: 3px;
+      height: 80px;
+      background: var(--line);
+      margin: 0 auto;
+    }
+
+    .timeline-item:last-child .timeline-line {
+      display: none;
+    }
+
+    .timeline-content h3 {
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+
+    .timeline-content p {
+      color: var(--smoke);
+      margin: 0;
+    }
+
+    /* ===== TESTIMONIALS SECTION ===== */
+    .testimonials-intro {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .testimonial-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      padding: 40px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(10, 26, 46, 0.08);
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 0.6s ease-out backwards;
+    }
+
+    .testimonials-grid .testimonial-item:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .testimonials-grid .testimonial-item:nth-child(2) {
+      animation-delay: 0.25s;
+    }
+
+    .testimonials-grid .testimonial-item:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .testimonial-item:hover {
+      transform: translateY(-8px) translateX(-4px);
+      box-shadow: 0 20px 48px rgba(0, 136, 203, 0.15);
+      border: 1px solid var(--blue-light);
+    }
+
+    .testimonial-item.reverse {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonial-item.reverse .image-block {
+      order: 2;
+    }
+
+    .testimonial-item.reverse .content {
+      order: 1;
+    }
+
+    .testimonial-item .image-block {
+      animation: slideInLeft 0.6s ease-out 0.2s backwards;
+    }
+
+    .testimonial-item.reverse .image-block {
+      animation: slideInRight 0.6s ease-out 0.2s backwards;
+    }
+
+    .testimonial-item .content {
+      animation: slideInRight 0.6s ease-out 0.25s backwards;
+    }
+
+    .testimonial-item.reverse .content {
+      animation: slideInLeft 0.6s ease-out 0.25s backwards;
+    }
+
+    .testimonial-item h4 {
+      color: var(--blue);
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .testimonial-item p {
+      color: var(--smoke);
+      line-height: 1.8;
+    }
+
+    .image-block {
+      height: 280px;
+    }
+
+    /* ===== AUDIENCE SECTION ===== */
+    .audience-intro {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .audience-card {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      border: 2px solid var(--line);
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 0.6s ease-out backwards;
+    }
+
+    .audience-grid .audience-card:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .audience-grid .audience-card:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .audience-grid .audience-card:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .audience-card::after {
+      content: '';
+      position: absolute;
+      bottom: -100%;
+      left: 50%;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(0, 136, 203, 0.3), transparent);
+      border-radius: 50%;
+      transform: translateX(-50%);
+      transition: bottom 0.5s ease-out;
+      pointer-events: none;
+    }
+
+    .audience-card:hover {
+      border-color: var(--blue);
+      background: linear-gradient(135deg, rgba(0, 136, 203, 0.02), transparent);
+      transform: translateY(-12px);
+      box-shadow: 0 16px 40px rgba(0, 136, 203, 0.12);
+    }
+
+    .audience-card:hover::after {
+      bottom: -20%;
+    }
+
+    .audience-card h3 {
+      animation: fadeInUp 0.5s ease-out 0.2s backwards;
+    }
+
+    .audience-card h3 {
+      color: var(--blue);
+      margin-bottom: 16px;
+    }
+
+    .audience-card p {
+      margin-bottom: 24px;
+    }
+
+    .audience-card .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* ===== ENROLLMENT SECTION ===== */
+    .enrollment {
+      background: linear-gradient(135deg, var(--ink), var(--blue-dark));
+      color: white;
+      text-align: center;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .enrollment::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .enrollment::after {
+      content: '';
+      position: absolute;
+      bottom: -300px;
+      left: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 203, 5, 0.1), transparent);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .enrollment h2 {
+      color: white;
+      margin-bottom: 24px;
+      animation: slideInLeft 0.6s ease-out 0.1s backwards;
+      position: relative;
+      z-index: 1;
+    }
+
+    .enrollment-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 48px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: slideInRight 0.6s ease-out 0.2s backwards;
+      position: relative;
+      z-index: 1;
+    }
+
+    .enrollment-cta {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+      animation: fadeInUp 0.6s ease-out 0.3s backwards;
+      position: relative;
+      z-index: 1;
+    }
+
+    .enrollment-note {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+      animation: fadeInUp 0.6s ease-out 0.4s backwards;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      section { padding: 60px 0; }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 60px 24px;
+      }
+
+      .hero-content h1 {
+        font-size: 2.2rem;
+        margin-bottom: 16px;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+
+      .hero-logo img {
+        height: 100px;
+      }
+
+      .hero-image::before {
+        width: 226px;
+        height: 226px;
+      }
+
+      .hero-image img {
+        width: 220px;
+        height: 220px;
+      }
+
+      .content-grid,
+      .courses-grid,
+      .audience-grid,
+      .testimonial-item {
+        grid-template-columns: 1fr;
+      }
+
+      .content-grid.reverse .text-block,
+      .content-grid.reverse .image-block,
+      .testimonial-item.reverse .image-block,
+      .testimonial-item.reverse .content {
+        order: auto;
+      }
+
+      .testimonial-item.reverse .image-block {
+        order: 0;
+      }
+
+      .testimonial-item.reverse .content {
+        order: 1;
+      }
+
+      .image-block { height: 300px; }
+      .timeline-item { grid-template-columns: 100px 1fr; }
+
+      .hero-cta {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .enrollment-cta {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-logo">
+        <img src="https://static.wixstatic.com/media/2b1d5d_c98f10eceb2340cea24bcc8d3bad4067~mv2.png" alt="HKILD Logo">
+      </div>
+      <h1>真實習才能訓練出真技術，<br>幫你真實地掌握醫護技能</h1>
+      <p class="hero-subtitle">HKILD 香港生命開展學會 — 專注醫護技能培訓超過12年。我哋唔賣證書，我哋教你一門帶得走嘅手藝。</p>
+
+      <div class="hero-cta">
+        <a href="#courses" class="btn btn-primary">了解抽血課程</a>
+        <a href="#courses" class="btn btn-secondary">了解注射課程</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img class="circle-img" src="https://static.wixstatic.com/media/025962_662886f8f3664f39bf2ae46097f7ecc7~mv2.jpg" alt="HKILD 學員課堂">
+      <img class="circle-img" src="https://static.wixstatic.com/media/025962_4497b76b1a644ba28c42fdb3126d2a23~mv2.jpg" alt="HKILD 實習成果">
+      <img src="https://static.wixstatic.com/media/2b1d5d_34d3c3b0e302473ca3e801fd23b63068~mv2.jpg" alt="HKILD 課堂現場">
+    </div>
+  </div>
+</section>
+
+<!-- ===== COURSE OVERVIEW SECTION ===== -->
+<section id="courses" class="alt">
+  <div class="container">
+    <div class="courses-intro">
+      <h2>我哋嘅課程</h2>
+    </div>
+
+    <div class="courses-grid">
+      <div class="course-card">
+        <span class="course-badge">皇牌課程</span>
+        <h3>真人抽血證書課程</h3>
+        <div class="course-highlight">
+          <p>8星期，由零開始，學識真正嘅靜脈穿刺技術。</p>
+        </div>
+        <ul class="course-features">
+          <li>真人對練，唔係模型訓練</li>
+          <li>導師手把手指導，累積10次成功穿刺先可考試</li>
+          <li>適合零經驗想入職醫護人士、護理系學生、現職醫護從業員</li>
+        </ul>
+        <a href="https://www.hkild.com/phlebotomydetails" class="btn btn-primary" style="width: 100%; justify-content: center;">查看課程詳情</a>
+      </div>
+
+      <div class="course-card">
+        <span class="course-badge">獨立課程</span>
+        <h3>注射技巧證書課程</h3>
+        <div class="course-highlight">
+          <p>掌握肌肉（IM）、皮下（SC）兩種注射技巧，用新鮮豬肉實操練習。</p>
+        </div>
+        <ul class="course-features">
+          <li>唔使互相打針，用豬肉練習最真實手感</li>
+          <li>獨立報讀，無需先完成抽血課程</li>
+          <li>適合想掌握注射技巧嘅人士、護理系學生、現職醫護從業員</li>
+        </ul>
+        <a href="https://www.hkild.com/course-details-2" class="btn btn-primary" style="width: 100%; justify-content: center;">查看課程詳情</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY HKILD SECTION ===== -->
+<section>
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: 60px;">點解揀 HKILD？</h2>
+
+    <div class="why-timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="timeline-dot">1</div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <h3>真人實習，唔係模型訓練</h3>
+          <p>坊間唔少課程用模型手臂教學，但真嘅靜脈刺穿技巧，需透過真人實習，才能正確掌握。我哋堅持學員之間互相實習，係想令同學能建立出對臨床技術應用嘅信心。</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="timeline-dot">2</div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <h3>嚴格才能培訓出高水平</h3>
+          <p>90%出席率要求、累積10次成功穿刺先准考試、高標準實操考核。我哋嘅門檻高，但每一位畢業生拎住證書行出去，技術都經得起實戰考驗。</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="timeline-dot">3</div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <h3>手把手貼身指導</h3>
+          <p>小班教學，導師全程貼身指導。特別係頭幾堂，導師會捉住你手去感受正確嘅入針角度同深淺度，確保學員由第一針就開始適應技術上嘅規範。</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="timeline-dot">4</div>
+        </div>
+        <div class="timeline-content">
+          <h3>畢業唔係完結，入職先係新開始</h3>
+          <p>我哋為舊生提供就業資訊分享同長期嘅社群連結。好多舊生畢業後靠住自己嘅實力同我哋嘅network支援，成功入職專科診所、醫學化驗中心、體檢中心、公私營醫院等抽血崗位。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS SECTION ===== -->
+<section class="alt">
+  <div class="container">
+    <div class="testimonials-intro">
+      <h2>學員真實成果</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-item">
+        <div class="image-block">
+          <img src="https://static.wixstatic.com/media/2b1d5d_929f9892a0724060975fc7ae049e8fd6~mv2.jpg" alt="梁同學">
+        </div>
+        <div class="content">
+          <h4>梁同學 — 未畢業已獲聘專科診所</h4>
+          <p>從未接觸醫護行業，報讀抽血班兩個月後，課程未完成已成功獲聘專科診所Clinic Assistant。真人實習加專業課程，令僱主對佢嘅實戰能力充滿信心。</p>
+        </div>
+      </div>
+
+      <div class="testimonial-item reverse">
+        <div class="image-block">
+          <img src="https://static.wixstatic.com/media/2b1d5d_07d0692b82b643e18335755c627c13e4~mv2.jpg" alt="NHS">
+        </div>
+        <div class="content">
+          <h4>舊生成功入職英國NHS</h4>
+          <p>移民英國後搵工，HKILD幫手填寫Reference Check，最終成功入職NHS。證書係入場券，但實力先係留得低嘅關鍵。</p>
+        </div>
+      </div>
+
+      <div class="testimonial-item">
+        <div class="image-block">
+          <img src="https://static.wixstatic.com/media/025962_c41802e483354286933e8f8414d8e93d~mv2.jpg" alt="DSE學生">
+        </div>
+        <div class="content">
+          <h4>DSE學生Codly — 入Nursing前先裝備自己</h4>
+          <p>DSE之後、入護理系之前，先嚟HKILD學識真人抽血技術。入到大學實習時，比同學更有信心同手感。提早準備，唔使到實習先至驚。</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px;">
+      <a href="https://www.hkild.com/studentsharing" class="btn btn-primary">睇更多學員分享 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AUDIENCE PATHWAYS SECTION ===== -->
+<section>
+  <div class="container">
+    <div class="audience-intro">
+      <h2>無論你嘅背景係咩，HKILD 都可以幫到你</h2>
+    </div>
+
+    <div class="audience-grid">
+      <div class="audience-card">
+        <h3>想轉行，但零醫護經驗</h3>
+        <p>你可能係文員、零售、自僱人士，想搵份穩定啲嘅工作。HKILD專為零基礎設計課程，8星期學識一門實用技能。</p>
+        <a href="https://www.hkild.com/phlebotomydetails" class="btn btn-primary">了解抽血課程</a>
+      </div>
+
+      <div class="audience-card">
+        <h3>DSE考完，想為護理系鋪路</h3>
+        <p>等放榜期間與其乾等，不如提早裝備自己。學識真人抽血技術，入到大學實習時自然更有信心。</p>
+        <a href="https://www.hkild.com/dsepage" class="btn btn-primary">去DSE專頁睇下</a>
+      </div>
+
+      <div class="audience-card">
+        <h3>現職醫護，想進修提升</h3>
+        <p>你可能已經係診所護士、醫務助理，想學多一門技術提升自己嘅專業能力。我哋可以幫到你進修。</p>
+        <a href="#courses" class="btn btn-primary">瀏覽所有課程</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ENROLLMENT SECTION ===== -->
+<section class="enrollment">
+  <div class="container">
+    <h2>2026年新班招生中</h2>
+    <p class="enrollment-subtitle">我哋嘅課程定期開班，小班制，名額有限。無論你想學抽血定注射，而家就係最好嘅行動時間。</p>
+
+    <div class="enrollment-cta">
+      <a href="https://www.hkild.com/signup" class="btn btn-primary">立即報名</a>
+      <a href="https://wa.me/85269063436" target="_blank" class="btn btn-secondary">WhatsApp 查詢</a>
+    </div>
+
+    <p class="enrollment-note">學費及優惠詳情請參閱課程頁面，或WhatsApp聯絡我哋了解最新安排。</p>
+  </div>
+</section>
+
+</body>
+</html>
