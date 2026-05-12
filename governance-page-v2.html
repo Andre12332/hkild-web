@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>HKILD 專家委員會及管治架構 | 香港生命開展學會</title>
+<meta name="description" content="認識 HKILD 的專家委員會 — 由學術界、醫護界、緊急救援及國際數據領域的頂尖專家組成。">
+<meta property="og:title" content="HKILD 專家委員會及管治架構 | 香港生命開展學會">
+<meta property="og:description" content="認識由業界頂尖專家組成的管治團隊，確保每一項培訓均符合最嚴謹的專業標準與社會期望。">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "香港生命開展學會 (HKILD)",
+  "alternateName": "Hong Kong Institute for Life Development",
+  "description": "一個靠譜的醫護培訓學會，幫你在 8 週內學會實用技能，開啟新人生。",
+  "url": "https://www.hkild.com",
+  "sameAs": [
+    "https://www.instagram.com/hkild.official",
+    "https://www.facebook.com/hkild"
+  ],
+  "knowsAbout": [
+    "Medical Training",
+    "Nursing Education",
+    "Phlebotomy",
+    "Healthcare Professional Development",
+    "Clinical Training"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.hkild.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "專家委員會及管治架構",
+      "item": "https://www.hkild.com/governance"
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  /* HKILD Brand Colors (Updated 2026-03-18) */
+  --ink:           #0a1a2e;        /* Dark Navy for text/headings */
+  --paper:         #f5f7fa;        /* Background Gray */
+  --blue:          #0088cb;        /* Brand Blue */
+  --blue-dark:     #0070a8;        /* Darker Blue (hover) */
+  --blue-light:    #a6d1ee;        /* Light Blue (accents) */
+  --red:           #ed1c24;        /* CTA Red */
+  --red-hover:     #cc1520;        /* Red hover state */
+  --yellow:        #ffcb05;        /* Yellow Accent */
+  --smoke:         #5a6a7a;        /* Smoke Gray (secondary text) */
+  --line:          #d8e4ed;        /* Border Gray */
+  --card:          #ffffff;        /* White cards */
+
+  /* Legacy references (for compatibility) */
+  --pure-white:    #ffffff;
+  --light-gray:    #f5f7fa;
+  --border-gray:   #d8e4ed;
+  --navy:          #0a1a2e;
+
+  --radius:        12px;
+  --radius-card:   16px;
+  --shadow:        0 4px 20px rgba(0,136,203,.35);
+  --shadow-lg:     0 12px 40px rgba(0,136,203,.45);
+  --ease:          cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after {
+  margin: 0; padding: 0; box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans TC', -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ────────── TYPOGRAPHY ────────── */
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--smoke);
+  margin-bottom: 16px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  color: var(--blue-light);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 12px;
+}
+
+/* ────────── HERO SECTION ────────── */
+
+.hero {
+  background: linear-gradient(165deg, #00213a 0%, #003d6b 45%, #004f88 100%);
+  color: #fff;
+  padding: 60px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(0,136,203,.15), transparent);
+  pointer-events: none;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.85);
+  font-size: 18px;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* ────────── INTRO SECTION ────────── */
+
+.intro-section {
+  padding: 48px 0;
+  background: var(--paper);
+}
+
+.intro-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.intro-content h2 {
+  margin-bottom: 20px;
+}
+
+.intro-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.stat-card {
+  background: var(--pure-white);
+  padding: 24px;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--smoke);
+  font-weight: 600;
+}
+
+/* ────────── TABS SECTION ────────── */
+
+.committees-section {
+  padding: 60px 0;
+}
+
+
+
+
+
+.tab-content {
+  display: block;
+  animation: fadeIn 0.3s var(--ease);
+  margin-bottom: 48px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ────────── COMMITTEE INFO ────────── */
+
+.committee-info {
+  background: var(--paper);
+  padding: 24px;
+  border-radius: var(--radius);
+  margin-bottom: 32px;
+  border-left: 4px solid var(--blue);
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  user-select: none;
+  position: relative;
+  padding-right: 40px;
+}
+
+.committee-info:hover {
+  background: #f0f4f8;
+  border-left-color: var(--blue-dark);
+}
+
+.committee-info::after {
+  content: '▼';
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  font-size: 14px;
+  color: var(--blue);
+  transition: transform 0.3s var(--ease);
+  font-weight: bold;
+}
+
+.committee-info.collapsed::after {
+  transform: rotate(-90deg);
+}
+
+.committee-info h3 {
+  margin-bottom: 12px;
+}
+
+.committee-info p {
+  margin-bottom: 0;
+}
+
+/* ────────── EXPERTS GRID ────────── */
+
+.experts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.expert-card {
+  flex: 0 1 360px;
+  background: var(--pure-white);
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius);
+  padding: 0;
+  overflow: visible;
+  transition: all 0.3s var(--ease);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.expert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--blue);
+}
+
+.expert-header {
+  background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+  color: white;
+  padding: 32px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+}
+
+.expert-avatar {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  background: rgba(255,255,255,0.2);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+
+.expert-name {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+
+.expert-name-en {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.expert-role {
+  font-size: 13px;
+  opacity: 0.9;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.expert-body {
+  padding: 24px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.expert-bio {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--prof-gray);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.expert-credentials h4 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.credentials-list {
+  list-style: none;
+  font-size: 13px;
+  color: var(--prof-gray);
+  line-height: 1.6;
+}
+
+.credentials-list li {
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.credentials-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.expert-responsibility {
+  background: rgba(0, 136, 203, 0.06);
+  border-left: 3px solid var(--blue);
+  padding: 12px 14px;
+  border-radius: 4px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--smoke);
+  line-height: 1.6;
+}
+
+/* ────────── VALUES SECTION ────────── */
+
+.values-section {
+  padding: 48px 0;
+  background: var(--paper);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.value-card {
+  background: var(--pure-white);
+  padding: 28px;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: all 0.3s var(--ease);
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.value-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.value-card h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  font-size: 14px;
+  color: var(--smoke);
+  margin: 0;
+}
+
+/* ────────── CTA SECTION ────────── */
+
+.cta-section {
+  padding: 60px 0;
+  background: var(--ink);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,136,203,.18), transparent);
+  pointer-events: none;
+}
+
+.cta-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-section h2 {
+  color: white;
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 24px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--red);
+  color: white;
+  padding: 16px 34px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.25s var(--ease);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,136,203,.35);
+}
+
+.cta-button:hover {
+  background: var(--red-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,136,203,.45);
+}
+
+/* ────────── RESPONSIVE ────────── */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0 60px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .intro-box {
+    grid-template-columns: 1fr;
+  }
+
+  .experts-grid {
+    justify-content: stretch;
+  }
+
+  .expert-card {
+    flex: 1 1 100%;
+    aspect-ratio: auto;
+  }
+
+  .tabs {
+    gap: 8px;
+  }
+
+  .tab-btn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .hero {
+    padding: 32px 0 48px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .intro-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expert-card {
+    border: none;
+  }
+
+  .committees-section {
+    padding: 32px 0;
+  }
+
+  .tabs {
+    gap: 0;
+    padding-bottom: 12px;
+  }
+
+  .tab-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ════════════════════════════════════ HERO ════════════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <span class="badge">管治架構</span>
+    <h1>專家委員會及管治架構</h1>
+    <p>由業界專家組成的管治團隊，確保每一項培訓均符合最嚴謹的專業標準與社會期望。</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════ INTRO ════════════════════════════════════ -->
+<section class="intro-section">
+  <div class="container">
+    <div class="intro-box">
+      <div class="intro-content">
+        <h2>香港生命開展學會管治</h2>
+        <p>HKILD 致力於提升本港基層醫療人員專業素養。本會管治團隊由涵蓋學術界、醫護界、緊急救援及國際數據領域的專家組成，確保每一項培訓均符合最嚴謹的專業標準與社會期望。</p>
+        <p>本會透過三大核心委員會各司其職，為學員提供全面的學術監督、臨床合規及國際化標準：</p>
+        <p style="color: var(--blue); font-weight: 600;">• 機構領導及策略發展  • 學術監督及專業倫理  • 臨床合規及品質安全</p>
+      </div>
+      <div class="intro-stats">
+        <div class="stat-card">
+          <div class="stat-number">3</div>
+          <div class="stat-label">核心委員會</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8</div>
+          <div class="stat-label">專家委員</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">年資經驗</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4000+</div>
+          <div class="stat-label">培訓學員</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════ COMMITTEES ════════════════════════════════════ -->
+<section class="committees-section">
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: 32px;">核心委員會</h2>
+
+    <!-- ──── COMMITTEE 1 ──── -->
+    <div id="committee-1" class="tab-content active">
+      <div class="committee-info">
+        <h3>機構領導及策略發展委員會</h3>
+        <p>負責學會整體願景、行業對接及國際化標準監管。</p>
+      </div>
+
+      <div class="experts-grid">
+        <!-- Ray Li -->
+        <div class="expert-card">
+          <div class="expert-header">
+            <div class="expert-avatar" aria-label="Li Lok Chun Ray - 創會會長及首席導師" style="background-image: url('https://static.wixstatic.com/media/2b1d5d_0bdeb985a74f46b7b901d0203e16ace6~mv2.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="expert-name">李樂春</div>
+            <div class="expert-name-en">Mr. Li Lok Chun, Ray</div>
+            <div class="expert-role">創會會長及首席導師</div>
+          </div>
+          <div class="expert-body">
+            <div class="expert-bio">Ray 曾服役於駐港英陸軍醫療軍團擔任醫療兵多年，具備深厚的醫護及訓練經驗。他以應用心理學背景深化學員的溝通與情緒管理能力，結合職業安全與健康專業知識，確保教學環境的合規性與安全標準。深耕醫護培訓超過 20 年，至今已為醫護界培育超過 4,000 人員。</div>
+            <div class="expert-credentials">
+              <h4>專業資歷</h4>
+              <ul class="credentials-list">
+                <li>前英國皇家陸軍醫療軍團 (Royal Army Medical Corps) 醫療兵</li>
+                <li>現任美國心臟協會 (American Heart Association) 認可導師</li>
+                <li>香港浸會大學 應用心理學文憑</li>
+                <li>香港浸會大學 職業安全與健康專業文憑</li>
+                <li>國際函授學校 營養科學文憑</li>
+                <li>逾 20 年醫療培訓經驗，培訓學員逾 4,000 名</li>
+              </ul>
+            </div>
+            <div class="expert-responsibility">
+              <strong style="color: var(--blue);">職責：</strong> 負責學會核心臨床課程（如抽血及靜脈穿刺）的開發，確保課程的專業性、實踐性及監控課程的安全性。
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. Thomas Murphy -->
+        <div class="expert-card">
+          <div class="expert-header">
+            <div class="expert-avatar" aria-label="Dr. Thomas Murphy - 策略發展及數據管治顧問" style="background-image: url('https://static.wixstatic.com/media/2b1d5d_d44221fb1dee464b87ca5b797e3313ea~mv2.jpg'); background-size: 125%; background-position: center top;"></div>
+            <div class="expert-name">Dr. Thomas Murphy</div>
+            <div class="expert-role">策略發展及數據管治顧問</div>
+            <div style="height: 8px;"></div>
+          </div>
+          <div class="expert-body">
+            <div class="expert-bio">Thomas 為英國利茲大學博士，現職於英國皇室地產，專長於數據分析與策略規劃。他具備豐富的國際委員會管治經驗，負責為本會建立具備國際標準的審核機制。</div>
+            <div class="expert-credentials">
+              <h4>專業資歷</h4>
+              <ul class="credentials-list">
+                <li>英國利茲大學 (University of Leeds) 量化地理學博士</li>
+                <li>英國皇室地產 (The Crown Estate) 數據分析師</li>
+                <li>具備英國多個機構董事會財務監督及司庫經驗</li>
+              </ul>
+            </div>
+            <div class="expert-responsibility">
+              <strong style="color: var(--blue);">職責：</strong> 提供國際化管治建議，監督學會質素保證數據系統，確保評核數據符合國際專業基準。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ──── COMMITTEE 2 ──── -->
+    <div id="committee-2" class="tab-content">
+      <div class="committee-info">
+        <h3>學術監督及專業倫理委員會</h3>
+        <p>確保課程具備醫護教育級別的學術嚴謹性，涵蓋醫護人員所需的溝通與倫理素養。</p>
+      </div>
+
+      <div class="experts-grid">
+        <!-- Dr. Cheung Ka Tik -->
+        <div class="expert-card">
+          <div class="expert-header">
+            <div class="expert-avatar" aria-label="張家迪 博士 - 教育委員會主席及首席學術顧問" style="background-image: url('https://static.wixstatic.com/media/2b1d5d_536ba741b6aa405bae45deb9ed5c7a04~mv2.jpeg'); background-size: cover; background-position: center;"></div>
+            <div class="expert-name">張家迪</div>
+            <div class="expert-name-en">Dr. Cheung Ka Tik</div>
+            <div class="expert-role">教育委員會主席及首席學術顧問</div>
+          </div>
+          <div class="expert-body">
+            <div class="expert-bio">張博士為香港都會大學助理教授，亦是醫務化驗師管理委員會行為準則工作小組成員。他結合深厚的學術研究與法規經驗，為學會課程提供學術指導與監督。</div>
+            <div class="expert-credentials">
+              <h4>專業資歷</h4>
+              <ul class="credentials-list">
+                <li>香港都會大學護理及健康學院助理教授</li>
+                <li>美國臨床病理學會國際化學專家</li>
+                <li>英國生物醫學科學研究所院士</li>
+                <li>英國皇家生物學會會員</li>
+                <li>香港醫務化驗學會 (HKIMLS) 理事會成員</li>
+                <li>醫務化驗師管理委員會 (MLTB) 行為準則工作小組成員</li>
+                <li>香港註冊醫務化驗師</li>
+              </ul>
+            </div>
+            <div class="expert-responsibility">
+              <strong style="color: var(--blue);">職責：</strong> 作為學術最高負責人，張博士帶領教育委員會審核醫學相關課程的學術發展，並致力於推動學會舉辦化驗師持續進修課程（CPD），提升業界整體的專業技術水準。
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. Wong Kin Keung -->
+        <div class="expert-card">
+          <div class="expert-header">
+            <div class="expert-avatar" aria-label="黃堅強 博士 - 通識教育及專業倫理顧問" style="background-image: url('https://static.wixstatic.com/media/2b1d5d_b07e171d2c684f91a760793f97da5178~mv2.jpg'); background-size: 150%; background-position: center top;"></div>
+            <div class="expert-name">黃堅強</div>
+            <div class="expert-name-en">Dr. Wong Kin Keung</div>
+            <div class="expert-role">通識教育及專業倫理顧問</div>
+          </div>
+          <div class="expert-body">
+            <div class="expert-bio">黃博士曾任中大講師，科大哲學博士，專攻社會科學與中西哲學。他致力於將性格心理學與溝通技巧融入醫療教學，提升學員的人文素養與專業操守。</div>
+            <div class="expert-credentials">
+              <h4>專業資歷</h4>
+              <ul class="credentials-list">
+                <li>香港科技大學哲學博士 (PhD)</li>
+                <li>香港中文大學社會科學學士及哲學碩士</li>
+                <li>ACEPT 性格型態學始創人</li>
+              </ul>
+            </div>
+            <div class="expert-responsibility">
+              <strong style="color: var(--blue);">職責：</strong> 優化課程中的「通用能力」與「醫患溝通」模組，提升學員的職業倫理及同理心表現。
+            </div>
+          </div>
+        </div>
+        <!-- Mr. CHAN HO MAN, Ivan -->
+        <div class="expert-card">
+          <div class="expert-header">
+            <div class="expert-avatar" aria-label="陳浩旻 Ivan - 醫務化驗師發展及技術顧問" style="background-image: url('https://static.wixstatic.com/media/2b1d5d_0b79281401ca4e43aa15f83582d67835~mv2.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="expert-name">陳浩旻</div>
+            <div class="expert-name-en">Mr. CHAN HO MAN, Ivan</div>
+            <div class="expert-role">醫務化驗師發展及技術顧問</div>
+          </div>
+          <div class="expert-body">
+            <div class="expert-bio">Ivan 為註冊一級醫務化驗師，服務行業超過 13 年。他以深厚的化驗專業知識結合 AI 與數據技術，為學會的化驗課程提供技術支援與教學指導，致力推動業界持續進步。</div>
+            <div class="expert-credentials">
+              <h4>專業資歷</h4>
+              <ul class="credentials-list">
+                <li>英國 Nottingham Trent University 生物醫學榮譽學士</li>
+                <li>香港註冊一級醫務化驗師</li>
+                <li>香港醫務化驗學會 (HKIMLS) 成員</li>
+                <li>AI 應用與數據技術顧問</li>
+              </ul>
+            </div>
+            <div class="expert-responsibility">
+              <strong style="color: var(--blue);">職責：</strong> 推動學會舉辦醫務化驗師持續進修課程（CPD），並提供技術與數據支援，幫助課程緊貼業界發展。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ──── COMMITTEE 3 ──── -->
+    <div id="committee-3" class="tab-content">
+      <div class="committee-info">
+        <h3>臨床合規及品質安全委員會</h3>
+        <p>以醫管局及香港衛生防護中心標準，把關臨床風險與教學品質。</p>
+      </div>
+
+      <div class="experts-grid">
+        <!-- Mr. Woo -->
+        <div class="expert-card">
+          <div class="expert-header">
+            <div class="expert-avatar" aria-label="胡子正 先生 - 臨床培訓顧問" style="background-image: url('https://static.wixstatic.com/media/2b1d5d_5dfbebc3dde84470b3f684cb666a51e2~mv2.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="expert-name">胡子正</div>
+            <div class="expert-name-en">Mr. Woo Chi Ching</div>
+            <div class="expert-role">臨床培訓顧問</div>
+          </div>
+          <div class="expert-body">
+            <div class="expert-bio">胡先生曾任醫管局高級護士長，現為香港護理專科學院院士，擁有超過 30 年的護理行政管理經驗。他專責將公立醫院的高規格標準引入學會的實務培訓。</div>
+            <div class="expert-credentials">
+              <h4>專業資歷</h4>
+              <ul class="credentials-list">
+                <li>前香港葵涌醫院護理部高級護士長</li>
+                <li>醫療管理學碩士 (澳洲巴拉特大學)</li>
+                <li>香港護理及助產專科學院院士 (FHKANM)</li>
+              </ul>
+            </div>
+            <div class="expert-responsibility">
+              <strong style="color: var(--blue);">職責：</strong> 制定並審核臨床操作手則 (Clinical Protocols)，確保教學符合醫務規管同等級別的護理安全水平。
+            </div>
+          </div>
+        </div>
+
+        <!-- Ms. Chan Sau Ha -->
+        <div class="expert-card">
+          <div class="expert-header">
+            <div class="expert-avatar" aria-label="陳秀霞 女士 - 臨床培訓顧問" style="background-image: url('https://static.wixstatic.com/media/2b1d5d_7ff2519dbab849378731a31f8f18c1b5~mv2.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="expert-name">陳秀霞</div>
+            <div class="expert-name-en">Ms. Chan Sau Ha, May</div>
+            <div class="expert-role">臨床培訓顧問</div>
+          </div>
+          <div class="expert-body">
+            <div class="expert-bio">May 擁有超過 30 年的註冊護士及助產士經驗，曾於多間大型醫院及社會福利機構擔任管理職務。她具備深厚的臨床教學與安老院舍營運經驗，致力於將業界高標準臨床護理實務引入學會培訓。</div>
+            <div class="expert-credentials">
+              <h4>專業資歷</h4>
+              <ul class="credentials-list">
+                <li>英國牛津布魯克斯大學 (Oxford Brookes University) 醫療管理學碩士</li>
+                <li>香港註冊護士及註冊助產士</li>
+                <li>前香港三育書院護理學系臨床協調員</li>
+                <li>曾任聖保祿醫院副病房主管及安老院舍護理總監</li>
+              </ul>
+            </div>
+            <div class="expert-responsibility">
+              <strong style="color: var(--blue);">職責：</strong> 負責審核護理相關教學流程，提供學術指導與監督，定期巡視學員實習的技術符合醫療臨床標準。
+            </div>
+          </div>
+        </div>
+
+        <!-- Mr. Jonathan Yeung -->
+        <div class="expert-card">
+          <div class="expert-header">
+            <div class="expert-avatar" aria-label="楊先生 (Jonathan Yeung) - 技術顧問 (緊急管理及安全)" style="background-image: url('https://static.wixstatic.com/media/2b1d5d_2b376871589b409c88337ae8f24f135d~mv2.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="expert-name">楊先生</div>
+            <div class="expert-name-en">Mr. Jonathan Yeung</div>
+            <div class="expert-role">技術顧問 (緊急管理及安全)</div>
+          </div>
+          <div class="expert-body">
+            <div class="expert-bio">Jonathan 具備超過 14 年緊急管理資歷，持有績效管理碩士學位。他負責建立本會內部的品質保證系統，以專業的風險評估技術確保教學品質與合規安全。</div>
+            <div class="expert-credentials">
+              <h4>專業資歷</h4>
+              <ul class="credentials-list">
+                <li>逾 14 年緊急管理及專業指揮資歷</li>
+                <li>英國萊斯特大學績效管理碩士 (MSc)</li>
+                <li>國際應急管理者認證 (IAEM-AEM)</li>
+              </ul>
+            </div>
+            <div class="expert-responsibility">
+              <strong style="color: var(--blue);">職責：</strong> 負責內部品質保證 (QA) 系統設計，監修教學環境安全及應急預案。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════ VALUES ════════════════════════════════════ -->
+<section class="values-section">
+  <div class="container">
+    <h2 style="text-align: center;">管治核心價值</h2>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">🎓</div>
+        <h4>學術嚴謹</h4>
+        <p>課程內容符合國際標準與香港醫療規範。</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon">🛡️</div>
+        <h4>安全第一</h4>
+        <p>從課程設計到教學環境，層層把關。</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon">❤️</div>
+        <h4>同理關懷</h4>
+        <p>理解醫護人員需求，設計實用培訓。</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon">🌱</div>
+        <h4>持續進步</h4>
+        <p>隨著行業發展，不斷更新標準。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// ════════════════════════════════════ COMMITTEE COLLAPSE FUNCTIONALITY ════════════════════════════════════
+
+// Initialize all committees as expanded (visible)
+document.querySelectorAll('.committee-info').forEach(header => {
+  const tabContent = header.parentElement;
+  const expertsGrid = tabContent.querySelector('.experts-grid');
+
+  if (expertsGrid) {
+    // Ensure all experts grids are visible by default
+    expertsGrid.style.display = 'flex';
+  }
+
+  // Make committee headers clickable to collapse/expand
+  header.addEventListener('click', () => {
+    const tabContent = header.parentElement;
+    const expertsGrid = tabContent.querySelector('.experts-grid');
+
+    if (expertsGrid) {
+      // Toggle collapsed state
+      header.classList.toggle('collapsed');
+      expertsGrid.style.display = expertsGrid.style.display === 'none' ? 'flex' : 'none';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
